@@ -7,15 +7,19 @@
 *Generate personalized 7-day meal plans in seconds — powered by Google Gemini AI*
 
 [![Build Status](https://github.com/Nithyanaidu23/AI-DIET-BALANCE/actions/workflows/ci.yml/badge.svg)](https://github.com/Nithyanaidu23/AI-DIET-BALANCE/actions)
-[![Python](https://img.shields.io/badge/Python-3.12-3776ab.svg?logo=python)](https://python.org)
-[![Django](https://img.shields.io/badge/Django-5.1-092e20.svg?logo=django)](https://djangoproject.com)
+[![Python Version](https://img.shields.io/badge/Python-3.12-3776ab.svg?logo=python)](https://python.org)
+[![Django Version](https://img.shields.io/badge/Django-5.1-092e20.svg?logo=django)](https://djangoproject.com)
 [![React](https://img.shields.io/badge/React-18-61dafb.svg?logo=react)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178c6.svg?logo=typescript)](https://typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8.svg?logo=tailwindcss)](https://tailwindcss.com)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791.svg?logo=postgresql)](https://postgresql.org)
 [![Docker](https://img.shields.io/badge/Docker-Compose-2496ed.svg?logo=docker)](https://docker.com)
 [![Gemini AI](https://img.shields.io/badge/Google-Gemini%201.5-8e44ad.svg?logo=google)](https://aistudio.google.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e.svg)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/Nithyanaidu23/AI-DIET-BALANCE?style=social)](https://github.com/Nithyanaidu23/AI-DIET-BALANCE)
 [![Last Commit](https://img.shields.io/github/last-commit/Nithyanaidu23/AI-DIET-BALANCE)](https://github.com/Nithyanaidu23/AI-DIET-BALANCE/commits/main)
 [![Issues](https://img.shields.io/github/issues/Nithyanaidu23/AI-DIET-BALANCE)](https://github.com/Nithyanaidu23/AI-DIET-BALANCE/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/Nithyanaidu23/AI-DIET-BALANCE)](https://github.com/Nithyanaidu23/AI-DIET-BALANCE/pulls)
 
 </div>
 
@@ -23,42 +27,40 @@
 
 ## 🌐 Live Demo
 
-| Environment | URL | Status |
+| Environment | Link / URL | Status |
 |---|---|---|
-| 🌍 **Live Web App** | **[https://impending-lagoon-mustard.ngrok-free.dev](https://impending-lagoon-mustard.ngrok-free.dev)** | 🟢 Online |
+| 🚀 **Vercel Web App** | **[https://ai-diet-balance-o6vq.vercel.app/](https://ai-diet-balance-o6vq.vercel.app/)** | 🟢 Live Production |
+| 🌍 **Live API Tunnel** | **[https://impending-lagoon-mustard.ngrok-free.dev](https://impending-lagoon-mustard.ngrok-free.dev)** | 🟢 Online |
 | 🐙 **GitHub Pages** | **[https://Nithyanaidu23.github.io/AI-DIET-BALANCE/](https://Nithyanaidu23.github.io/AI-DIET-BALANCE/)** | 🟢 Online |
 | 💻 **Local App** | `http://localhost:5173` | 🔵 Local Dev |
-| ⚡ **Local API** | `http://localhost:8000/api/` | 🔵 Local Dev |
-| 📄 **Swagger UI** | `http://localhost:8000/api/schema/swagger-ui/` | 🔵 Local Dev |
+| ⚡ **Local REST API** | `http://localhost:8000/api/` | 🔵 Local Dev |
+| 📄 **Swagger UI Docs** | `http://localhost:8000/api/schema/swagger-ui/` | 🔵 Local Dev |
 | 👑 **Admin Console** | `http://localhost:8000/admin/` | 🔵 Local Dev |
 
 ---
 
 ## 📖 3. Project Overview
 
-### What is AI Diet Balance?
-
-**AI Diet Balance** is a full-stack, production-grade, multi-tenant **SaaS platform** that uses Google Gemini AI to generate personalized 7-day meal plans based on an individual's health profile, dietary goals, and nutritional science (Mifflin-St Jeor BMR, TDEE, body fat estimation, and ideal weight formulas).
+### What is the project?
+**AI Diet Balance** is a full-stack, enterprise-ready, multi-tenant **Nutrition & Health SaaS Platform**. It leverages **Google Gemini 1.5 AI** to deliver instant, personalized 7-day meal plans based on individual biometric profiles, health goals, and medical nutrition principles.
 
 ### Why was it built?
-
-Traditional diet plans are expensive, generic, and rarely sustainable. Most apps are either too simple (basic calorie counters) or too complicated (requiring a nutritionist). AI Diet Balance fills the gap with an intelligent, automated system that delivers **personalized, science-backed nutrition plans instantly and for free**.
+Traditional diet programs are expensive, static, and often non-personalized. Generic calorie-counting apps lack intelligent meal structuring and automated grocery planning. AI Diet Balance bridges this gap by providing an automated, science-backed nutrition ecosystem driven by **BMR (Mifflin-St Jeor)**, **TDEE**, macro calculations, and generative AI.
 
 ### Who is it for?
-- 🏋️ Athletes and fitness enthusiasts
-- 🏥 Healthcare professionals and dietitians
-- 💼 Individuals managing chronic conditions
-- 🏢 Wellness startups and SaaS companies
+- 🏋️ **Athletes & Fitness Enthusiasts**: Precision macro targets and workout nutrition.
+- 🏥 **Healthcare & Nutrition Professionals**: Automated meal planning tools for clients.
+- 💼 **Individuals**: Managing weight loss, muscle gain, diabetes, or dietary preferences (Keto, Vegan, Paleo, etc.).
+- 🏢 **Wellness Startups**: White-label enterprise SaaS architecture ready for scaling.
 
-### Problem → Solution
+### Problem Statement & Solution
 
 | Problem | Our Solution |
 |---|---|
-| Expensive nutritionist consultations | AI-generated personalized meal plans in seconds |
-| Generic diet apps | Profiles built from age, weight, height, activity level, and goals |
-| No grocery planning | Auto-generated shopping lists from meal plans |
-| Inconsistent tracking | Real-time water, BMI, and macro dashboards |
-| No admin visibility | Full multi-tenant admin dashboard with analytics |
+| **Costly Consultations**: Traditional dietitians charge $100+/hr for static PDF plans. | **Instant AI Generation**: Personalized 7-day meal plans generated in under 5 seconds for free. |
+| **Generic Diet Apps**: Apps treat every user with standardized static calorie targets. | **Science-Backed Biometrics**: Plans calculated via BMR, TDEE, Body Fat %, and macro splits. |
+| **Manual Shopping**: Translating a meal plan into a grocery list is tedious. | **Automated Shopping Lists**: Auto-aggregated ingredient shopping list per weekly meal plan. |
+| **No Operational Visibility**: Platforms lack administrative audit trails and user analytics. | **Multi-Tenant Admin Dashboard**: Full tracking of AI API calls, telemetry, users, and server health. |
 
 ---
 
@@ -68,41 +70,38 @@ Traditional diet plans are expensive, generic, and rarely sustainable. Most apps
 <tr>
 <td>
 
-### 🤖 AI & Nutrition
-- ✅ AI Meal Planner (Gemini 1.5)
-- ✅ Personalized 7-Day Diet Plans
-- ✅ Food Database (1,000+ items)
-- ✅ Macro Nutrient Tracking
-- ✅ BMI & BMR Calculator
-- ✅ TDEE & Body Fat Estimator
-- ✅ Water Intake Tracker
-- ✅ Grocery List Generator
+### 🤖 Core AI & Nutrition
+- 🥗 **AI Meal Planner** (Google Gemini 1.5)
+- 📋 **Personalized 7-Day Diet Plans**
+- 🍎 **Food Database** (1,000+ Items)
+- 🏋️ **Workout & Exercise Tracker**
+- 💧 **Water Intake Tracker**
+- 📐 **BMI, BMR & TDEE Calculator**
+- 🛒 **Automated Grocery List Generator**
 
 </td>
 <td>
 
-### 📊 Analytics & Reports
-- ✅ Nutrition Dashboard
-- ✅ KPI Cards & Progress Charts
-- ✅ Weekly Progress Visualizations
-- ✅ AI Recommendations
-- ✅ Export CSV / Excel / JSON
-- ✅ Admin Analytics Console
-- ✅ Platform-wide Usage Reports
-- ✅ AI Request & Log Audit Trail
+### 📊 Analytics & Reporting
+- 📊 **Nutrition Dashboard**
+- 📈 **Weekly Progress Analytics**
+- 🤖 **AI Health Recommendations**
+- 📤 **Export CSV / Excel / JSON**
+- 📄 **PDF Meal Plan Exporter**
+- 🔔 **Real-Time System Notifications**
+- 👑 **Multi-Tenant Admin Dashboard**
 
 </td>
 <td>
 
 ### 🔐 Platform & Security
-- ✅ JWT Authentication
-- ✅ Role-Based Access (Admin/User)
-- ✅ Multi-Tenant Admin Dashboard
-- ✅ Rate Limiting & DDoS Protection
-- ✅ REST API (60+ endpoints)
-- ✅ Swagger / OpenAPI 3.0 Docs
-- ✅ GitHub Actions CI/CD
-- ✅ Docker Compose Deployment
+- 🔒 **JWT Authentication** (Access + Refresh)
+- 🛡️ **Role-Based Access Control (RBAC)**
+- ⚡ **REST API** (60+ Endpoints)
+- 📚 **Swagger & OpenAPI 3.0 Docs**
+- 🛡️ **Rate Limiting & Throttling**
+- 🐳 **Docker Containerization**
+- 🔄 **GitHub Actions CI/CD Pipeline**
 
 </td>
 </tr>
@@ -112,49 +111,45 @@ Traditional diet plans are expensive, generic, and rarely sustainable. Most apps
 
 ## 🖼️ 5. Screenshots
 
-| Login Page | User Dashboard | AI Meal Planner |
+| 🔐 Login & Auth | 📊 User Dashboard | 🤖 AI Meal Generator |
 |---|---|---|
-| Mobile-first auth screen with animated layout | KPI cards, macro charts, water tracker summary | 7-day plan generator with nutrient targets |
+| ![Login Screenshot](https://via.placeholder.com/400x250/0b1329/38bdf8?text=Login+%26+Auth) | ![Dashboard Screenshot](https://via.placeholder.com/400x250/0b1329/10b981?text=User+Dashboard) | ![AI Meal Generator](https://via.placeholder.com/400x250/0b1329/8b5cf6?text=AI+Meal+Generator) |
+| *Mobile-first JWT Auth screen* | *KPI cards, macro donut chart & water tracker* | *7-day AI plan generator with target macros* |
 
-| Admin Panel | Analytics | Mobile View |
+| 📈 Analytics & Progress | 📱 Mobile Responsive View | 👑 Admin Management Panel |
 |---|---|---|
-| User management, AI audit logs, system health | Recharts bar & line graphs for platform metrics | Full responsive drawer navigation on 320px+ |
+| ![Analytics](https://via.placeholder.com/400x250/0b1329/f59e0b?text=Analytics+%26+Charts) | ![Mobile View](https://via.placeholder.com/400x250/0b1329/ec4899?text=Mobile+Drawer+View) | ![Admin Panel](https://via.placeholder.com/400x250/0b1329/06b6d4?text=Admin+Panel) |
+| *Recharts weekly calorie & macro progress* | *Full responsive drawer navigation on all screen sizes* | *User management, AI request logs & health audit* |
 
-> 📸 **Live demo accessible at** [https://impending-lagoon-mustard.ngrok-free.dev](https://impending-lagoon-mustard.ngrok-free.dev)
+> 🌐 **Test the Live Interactive Frontend at**: **[https://ai-diet-balance-o6vq.vercel.app/](https://ai-diet-balance-o6vq.vercel.app/)**
 
 ---
 
 ## 🏗️ 6. Architecture Diagram
 
 ```text
-                    👤 User (Any Device / Screen Size)
-                              │
-                    ┌─────────▼──────────┐
-                    │   React 18 + Vite  │  ← Mobile-First Responsive
-                    │   Tailwind CSS     │    Sidebar Drawer, Sticky Nav
-                    │   TanStack Query   │    Recharts Dashboards
-                    └─────────┬──────────┘
-                              │  HTTP REST (JWT Bearer Token)
-                    ┌─────────▼──────────┐
-                    │  Django REST API   │  ← DRF, SimpleJWT, Throttling
-                    │  60+ Endpoints     │    CorsHeaders, drf-spectacular
-                    │  Rate Limiting     │    OpenAPI 3.0 / Swagger UI
-                    └──────┬─────┬───────┘
-                           │     │
-          ┌────────────────▼──┐  └──────▼─────────────────┐
-          │   PostgreSQL DB   │       │  Google Gemini AI  │
-          │  15+ Tables       │       │  1.5 Flash Model   │
-          │  15,000+ Records  │       │  Zero-Downtime     │
-          └────────┬──────────┘       │  Fallback Client   │
-                   │                  └────────────────────┘
-     ┌─────────────┴──────────────┐
-     │                            │
-     ▼                            ▼
-┌──────────────┐         ┌────────────────────┐
-│ Thread-Safe  │         │  Automated ETL     │
-│ Multi-Export │         │  Pipeline (Pandas) │
-│ CSV/JSON/XLS │         │  Analytics Engine  │
-└──────────────┘         └────────────────────┘
+                     👤 User (Web / Mobile Browser)
+                               │
+                               ▼
+               ┌───────────────────────────────┐
+               │   React 18 + Vite Frontend    │  ← Hosted on Vercel
+               │   TypeScript / JSX            │    Responsive Drawer UI
+               │   Tailwind CSS + Recharts     │    TanStack Query & Axios
+               └───────────────┬───────────────┘
+                               │
+                               │ HTTPS REST API (JWT Bearer Token)
+                               ▼
+               ┌───────────────────────────────┐
+               │    Django 5.1 REST API        │  ← Gunicorn WSGI Server
+               │    60+ Endpoints              │    Django REST Framework
+               │    Rate Limiting & RBAC       │    drf-spectacular / Swagger
+               └───────┬───────────────┬───────┘
+                       │               │
+      ┌────────────────▼──┐         ┌──▼─────────────────────────┐
+      │   PostgreSQL 16   │         │    Google Gemini AI API    │
+      │   Relational DB   │         │    1.5 Flash Generative AI │
+      │   15+ Tables      │         │    Deterministic Fallback  │
+      └───────────────────┘         └────────────────────────────┘
 ```
 
 ---
@@ -162,38 +157,30 @@ Traditional diet plans are expensive, generic, and rarely sustainable. Most apps
 ## 🛠️ 7. Tech Stack
 
 ### Frontend
-| Technology | Version | Purpose |
-|---|---|---|
-| **React** | 18 | UI Component Framework |
-| **Vite** | 5 | Build Tool & Dev Server |
-| **Tailwind CSS** | 3 | Utility-First Styling |
-| **TanStack Query** | 5 | Server State Management |
-| **Recharts** | 2 | Data Visualization Charts |
-| **React Hook Form** | 7 | Form State Management |
-| **Zod** | 3 | Schema Validation |
-| **Lucide Icons** | Latest | Icon System |
+- **Framework**: React 18, Vite 5
+- **Language**: JavaScript / TypeScript Ready
+- **Styling**: Tailwind CSS 3.4
+- **State & Data**: TanStack Query (React Query v5), Axios
+- **Visualization**: Recharts 2.12
+- **Icons & UI**: Lucide React, Headless UI
 
 ### Backend
-| Technology | Version | Purpose |
-|---|---|---|
-| **Python** | 3.12 | Core Language |
-| **Django** | 5.1 | Web Framework |
-| **Django REST Framework** | 3.15 | REST API Layer |
-| **SimpleJWT** | 5 | JWT Authentication |
-| **drf-spectacular** | 0.27 | OpenAPI 3.0 Docs |
-| **Pandas** | 2.2 | ETL & Analytics |
-| **OpenPyXL** | 3.1 | Excel Export |
-| **Gunicorn** | 22 | Production WSGI Server |
+- **Framework**: Django 5.1, Django REST Framework 3.15
+- **Language**: Python 3.12
+- **Authentication**: SimpleJWT (JSON Web Tokens)
+- **API Documentation**: drf-spectacular (OpenAPI 3.0 / Swagger UI)
+- **Data & Analytics**: Pandas 2.2, OpenPyXL
+- **WSGI Server**: Gunicorn 22.0
 
-### Database & DevOps
-| Technology | Purpose |
-|---|---|
-| **PostgreSQL 16** | Production Relational Database |
-| **SQLite** | Local Development Database |
-| **Docker & Compose** | Containerization & Orchestration |
-| **GitHub Actions** | CI/CD Automation Pipeline |
-| **Locust** | API Performance Load Testing |
-| **Google Gemini 1.5** | AI Meal Plan Generation |
+### Database & AI
+- **Database**: PostgreSQL 16 (Production) / SQLite3 (Development)
+- **AI Model**: Google Gemini 1.5 Flash (Generative AI)
+
+### DevOps & Infrastructure
+- **Hosting**: Vercel (Frontend), Docker (Production)
+- **Containerization**: Docker, Docker Compose
+- **CI/CD**: GitHub Actions
+- **Load Testing**: Locust 2.29
 
 ---
 
@@ -202,54 +189,39 @@ Traditional diet plans are expensive, generic, and rarely sustainable. Most apps
 ```
 AI-DIET-BALANCE/
 │
-├── 📁 backend/                     # Django REST Framework Backend
-│   ├── 📁 accounts/                # User Authentication & RBAC
-│   │   ├── management/commands/    # create_admin_accounts seeder
-│   │   └── migrations/             # Database Migrations
-│   ├── 📁 ai_engine/               # Google Gemini AI Client + Fallback
-│   ├── 📁 activity_logs/           # User Activity & Audit Trail
-│   ├── 📁 health/                  # System Health Monitoring APIs
-│   ├── 📁 mealplanner/             # Meal Plan CRUD + AI Generation
-│   ├── 📁 nutrition/               # Food Database & Nutrition API
-│   ├── 📁 users/                   # User Profile & Settings
-│   ├── 📁 config/                  # Django Settings & URL Configuration
-│   ├── 📁 exports/                 # Auto-generated CSV, JSON, Excel
-│   ├── 📄 locustfile.py            # Load Testing Suite
-│   ├── 📄 manage.py                # Django Management Entry Point
-│   └── 📄 requirements.txt         # Python Dependencies
+├── 📁 backend/                      # Django REST Framework Backend
+│   ├── 📁 accounts/                 # Authentication & Role-Based Access
+│   │   ├── 📁 management/commands/  # CLI Seeder (create_admin_accounts)
+│   │   └── migrations/              # Database Migrations
+│   ├── 📁 ai_engine/                # Google Gemini AI Integration & Fallback
+│   ├── 📁 activity_logs/            # User Activity & Audit Trail Logging
+│   ├── 📁 health/                   # System Health Monitoring & Telemetry
+│   ├── 📁 mealplanner/              # Meal Plan CRUD & AI Generator
+│   ├── 📁 nutrition/                # Food Items Database (1,000+ Records)
+│   ├── 📁 users/                    # Profile & Health Metric Calculations
+│   ├── 📁 config/                   # Django Settings, URLs & WSGI Config
+│   ├── 📁 exports/                  # CSV, Excel & JSON Exporters
+│   ├── 📄 locustfile.py             # Locust Performance Load Test Suite
+│   ├── 📄 manage.py                 # Django CLI Management Script
+│   └── 📄 requirements.txt          # Python Dependencies
 │
-├── 📁 frontend/                    # React 18 + Vite Frontend
+├── 📁 frontend/                     # React 18 + Vite Frontend App
 │   ├── 📁 src/
-│   │   ├── 📁 components/          # Reusable React Components
-│   │   │   ├── Sidebar.jsx         # Mobile-First Drawer Navigation
-│   │   │   ├── AdminSidebar.jsx    # Admin Drawer Navigation
-│   │   │   ├── Navbar.jsx          # Sticky Top Bar + Hamburger Toggle
-│   │   │   ├── AppLayout.jsx       # User App Layout Manager
-│   │   │   └── AdminLayout.jsx     # Admin Layout Manager
-│   │   ├── 📁 pages/               # Page-Level React Views
-│   │   │   ├── Dashboard.jsx       # Main User Dashboard
-│   │   │   ├── MealPlanner.jsx     # AI Meal Plan Generator
-│   │   │   ├── BMICalculator.jsx   # BMI, BMR, TDEE Calculator
-│   │   │   ├── FoodSearch.jsx      # Food Database Browser
-│   │   │   ├── Profile.jsx         # User Profile Editor
-│   │   │   ├── History.jsx         # Meal Plan History
-│   │   │   ├── Landing.jsx         # Public Landing Page
-│   │   │   ├── Login.jsx           # Authentication
-│   │   │   ├── Register.jsx        # Registration
-│   │   │   ├── 📁 admin/           # Admin-Only Pages
-│   │   │   └── 📁 user/            # User-Specific Pages
-│   │   ├── 📁 context/             # React Context (Auth, Theme)
-│   │   ├── 📁 services/            # Axios API Service Layer
-│   │   ├── 📁 hooks/               # Custom React Hooks
-│   │   └── 📄 index.css            # Global Design System (Tailwind)
-│   ├── 📄 vite.config.js           # Vite Build Configuration
-│   ├── 📄 tailwind.config.js       # Tailwind CSS Design Tokens
-│   └── 📄 package.json             # Node Dependencies
+│   │   ├── 📁 components/           # Reusable UI Components (Navbar, Sidebar)
+│   │   ├── 📁 pages/                # Views (Dashboard, MealPlanner, BMI, Admin)
+│   │   ├── 📁 context/              # Auth & Theme Context Providers
+│   │   ├── 📁 services/             # Axios API Service Abstraction
+│   │   ├── 📁 hooks/                # Custom React Hooks
+│   │   └── 📄 index.css             # Tailwind CSS Global Stylesheet
+│   ├── 📄 vite.config.js            # Vite Build Config
+│   ├── 📄 tailwind.config.js        # Tailwind Utility Customizations
+│   └── 📄 package.json              # Node Dependencies
 │
-├── 📄 docker-compose.yml           # Full-Stack Docker Orchestration
-├── 📄 run_load_tests.ps1           # Locust Load Test Launcher Script
-├── 📄 performance_dashboard.md     # Performance Benchmarks & Results
-└── 📄 README.md                    # This File
+├── 📄 docker-compose.yml            # Docker Orchestration Configuration
+├── 📄 docker-compose.prod.yml       # Production Docker Stack
+├── 📄 performance_dashboard.md      # Load Test Results & Performance Metrics
+├── 📄 run_load_tests.ps1            # Load Testing Automation Script
+└── 📄 README.md                     # Project Documentation
 ```
 
 ---
@@ -257,160 +229,165 @@ AI-DIET-BALANCE/
 ## ⚙️ 9. Installation Guide
 
 ### Prerequisites
-- Python `3.12+`
-- Node.js `20+`
-- Git
+- **Python**: `3.12+`
+- **Node.js**: `20+` & `npm`
+- **Git**
 
-### Step-by-Step Setup
+### Step-by-Step Local Setup
 
-```powershell
-# 1. Clone the Repository
+#### 1. Clone the Repository
+```bash
 git clone https://github.com/Nithyanaidu23/AI-DIET-BALANCE.git
 cd AI-DIET-BALANCE
+```
 
-# 2. Backend: Create Virtual Environment
+#### 2. Backend Setup
+```bash
 cd backend
-python -m venv venv
-.\venv\Scripts\activate     # Windows
-# source venv/bin/activate  # Linux/Mac
 
-# 3. Install Python Dependencies
+# Create & activate virtual environment
+python -m venv venv
+# Windows:
+.\venv\Scripts\activate
+# Linux/Mac:
+source venv/bin/activate
+
+# Install dependencies
 pip install -r requirements.txt
 
-# 4. Configure Environment Variables (create .env file)
-copy .env.example .env
+# Configure Environment Variables
+cp .env.example .env
 
-# 5. Run Database Migrations
+# Run database migrations
 python manage.py migrate
 
-# 6. Seed Administrator Accounts
+# Seed Admin & Sample Data
 python manage.py create_admin_accounts
 
-# 7. Start Backend Server
+# Start Django Development Server
 python manage.py runserver
-# Backend runs at: http://localhost:8000
+# API Server runs at http://localhost:8000
+```
 
-# 8. Frontend: Install Dependencies (new terminal)
+#### 3. Frontend Setup
+```bash
 cd ../frontend
+
+# Install npm dependencies
 npm install
 
-# 9. Start Frontend Dev Server
+# Start Vite Development Server
 npm run dev
-# Frontend runs at: http://localhost:5173
+# App runs at http://localhost:5173
 ```
 
 ---
 
 ## 🐳 10. Docker Setup
 
+To build and run the entire full-stack application (Frontend + Backend + PostgreSQL) with a single command:
+
 ```bash
-# Build and launch all services (Backend, Frontend, PostgreSQL)
-docker-compose up --build
+# Build and launch containers
+docker compose up --build
 
 # Run in background (detached mode)
-docker-compose up --build -d
+docker compose up --build -d
 
-# Stop all services
-docker-compose down
+# Check running container logs
+docker compose logs -f
 
-# Run migrations inside Docker
-docker-compose exec backend python manage.py migrate
+# Stop and remove containers
+docker compose down
 ```
 
-After launch:
-- **Frontend App** → http://localhost:5173
-- **Backend API** → http://localhost:8000/api/
-- **Swagger Docs** → http://localhost:8000/api/schema/swagger-ui/
-- **PostgreSQL DB** → localhost:5432
+### Container Endpoints:
+- **Frontend App**: `http://localhost:5173`
+- **Backend API**: `http://localhost:8000/api/`
+- **Swagger UI**: `http://localhost:8000/api/schema/swagger-ui/`
+- **PostgreSQL Database**: `localhost:5432`
 
 ---
 
 ## 🔑 11. Environment Variables
 
-Create a `.env` file inside the `backend/` folder:
+Create a `.env` file in the `backend/` directory:
 
 ```env
-# Django Core
-SECRET_KEY=your-django-secret-key-here
+# Django Core Settings
+SECRET_KEY=django-insecure-your-secret-key-here
 DEBUG=True
-ALLOWED_HOSTS=localhost,127.0.0.1
+ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0
 
-# Database
+# Database Configuration (Leave empty to use local SQLite)
 DATABASE_URL=postgresql://postgres:password@localhost:5432/aidiet
-# Leave empty to use SQLite for local development
 
-# Google Gemini AI
-GEMINI_API_KEY=your-gemini-api-key-here
+# Google Gemini AI Key
+GEMINI_API_KEY=your-google-gemini-api-key-here
 
-# JWT Auth
+# JWT Authentication
 JWT_SECRET=your-jwt-secret-key-here
+JWT_ACCESS_TOKEN_LIFETIME_MINUTES=60
+JWT_REFRESH_TOKEN_LIFETIME_DAYS=7
 
-# CORS
-CORS_ALLOWED_ORIGINS=http://localhost:5173,http://localhost:3000
+# CORS Allowed Origins
+CORS_ALLOWED_ORIGINS=http://localhost:5173,http://localhost:3000,https://ai-diet-balance-o6vq.vercel.app
 ```
 
-> **Note**: If `GEMINI_API_KEY` is missing, the AI engine automatically falls back to a built-in deterministic 7-day meal plan so the app never crashes.
+> 💡 **Note**: If `GEMINI_API_KEY` is not provided, the platform automatically utilizes a deterministic meal generation fallback engine to ensure zero downtime.
 
 ---
 
 ## 📡 12. API Documentation
 
-### Interactive Docs
-| Format | URL |
-|---|---|
-| 🔵 **Swagger UI** | `http://localhost:8000/api/schema/swagger-ui/` |
-| 📚 **ReDoc** | `http://localhost:8000/api/schema/redoc/` |
-| 📄 **OpenAPI JSON** | `http://localhost:8000/api/schema/` |
-| 🏥 **Health Check** | `http://localhost:8000/api/health/status/` |
+Interactive API documentation is automatically generated using `drf-spectacular` and OpenAPI 3.0.
 
-### Key API Endpoints
-```
-POST   /api/accounts/login/          → JWT Login
-POST   /api/accounts/register/       → User Registration
-POST   /api/accounts/token/refresh/  → JWT Refresh
+| API Reference | URL | Description |
+|---|---|---|
+| 🔵 **Swagger UI** | `http://localhost:8000/api/schema/swagger-ui/` | Interactive API explorer & test console |
+| 📚 **ReDoc** | `http://localhost:8000/api/schema/redoc/` | Clean OpenAPI specification documentation |
+| 📄 **OpenAPI JSON** | `http://localhost:8000/api/schema/` | Raw OpenAPI 3.0 JSON schema |
+| 🏥 **Health Check** | `http://localhost:8000/api/health/status/` | System status & database connectivity check |
 
-GET    /api/mealplanner/plans/       → List All Meal Plans
-POST   /api/mealplanner/generate/    → Generate AI Meal Plan
-GET    /api/mealplanner/grocery/     → Get Grocery List
-
-GET    /api/nutrition/foods/         → Search Food Database
-GET    /api/health/bmi/              → Get BMI Records
-POST   /api/health/water/            → Log Water Intake
-
-GET    /api/admin/users/             → Admin: List All Users
-GET    /api/admin/analytics/         → Admin: Platform Analytics
-GET    /api/admin/ai-logs/           → Admin: AI Request Audit
-```
+### Primary Endpoints Overview
+- `POST /api/accounts/register/` - User registration
+- `POST /api/accounts/login/` - Obtain JWT access & refresh tokens
+- `GET  /api/mealplanner/plans/` - Retrieve user meal plans
+- `POST /api/mealplanner/generate/` - Trigger AI 7-day meal plan generation
+- `GET  /api/nutrition/foods/` - Query food database
+- `GET  /api/health/bmi/` - Get historical BMI & macro telemetry
+- `POST /api/health/water/` - Log daily water consumption
+- `GET  /api/admin/analytics/` - Multi-tenant platform analytics (Admin only)
 
 ---
 
 ## 🗄️ 13. Database Schema
 
 ```text
-┌──────────────┐   ┌───────────────┐   ┌────────────────┐
-│    Users     │──▶│   Profiles    │──▶│  Subscriptions │
-│  (accounts)  │   │ (health data) │   │ (Free/Pro/Ent) │
-└──────────────┘   └───────────────┘   └────────────────┘
-       │
-       ├──▶ ┌───────────────┐   ┌────────────────┐
-       │    │  Meal Plans   │──▶│  Meal Days     │
-       │    │  (7-day AI)   │   │  (daily meals) │
-       │    └───────────────┘   └────────────────┘
-       │
-       ├──▶ ┌───────────────┐   ┌────────────────┐
-       │    │  Food Items   │   │   BMI Records  │
-       │    │ (1,000+ items)│   │  (historical)  │
-       │    └───────────────┘   └────────────────┘
-       │
-       ├──▶ ┌───────────────┐   ┌────────────────┐
-       │    │  Water Logs   │   │ Activity Logs  │
-       │    │  (daily ml)   │   │  (audit trail) │
-       │    └───────────────┘   └────────────────┘
-       │
-       └──▶ ┌───────────────┐   ┌────────────────┐
-            │    Events     │   │    Payments    │
-            │  (telemetry)  │   │ (SaaS billing) │
-            └───────────────┘   └────────────────┘
+┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
+│     Users       │──────▶│    Profiles     │──────▶│  Subscriptions  │
+│ (Custom User)   │       │ (Height/Weight) │       │ (Free/Pro/Ent)  │
+└────────┬────────┘       └─────────────────┘       └─────────────────┘
+         │
+         ├───▶ ┌─────────────────┐       ┌─────────────────┐
+         │     │   Meal Plans    │──────▶│    Meal Days    │
+         │     │ (7-Day AI Plan) │       │  (Daily Meals)  │
+         │     └─────────────────┘       └─────────────────┘
+         │
+         ├───▶ ┌─────────────────┐       ┌─────────────────┐
+         │     │   Food Items    │       │   BMI Records   │
+         │     │ (1,000+ Items)  │       │  (Historical)   │
+         │     └─────────────────┘       └─────────────────┘
+         │
+         ├───▶ ┌─────────────────┐       ┌─────────────────┐
+         │     │   Water Logs    │       │  Exercise Logs  │
+         │     │ (Daily Intake)  │       │ (Workout Logs)  │
+         │     └─────────────────┘       └─────────────────┘
+         │
+         └───▶ ┌─────────────────┐       ┌─────────────────┐
+               │     Events      │       │  Notifications  │
+               │ (Activity Logs) │       │ (System Alerts) │
+               └─────────────────┘       └─────────────────┘
 ```
 
 ---
@@ -418,30 +395,30 @@ GET    /api/admin/ai-logs/           → Admin: AI Request Audit
 ## 🤖 14. AI Workflow
 
 ```text
-  👤 User fills Health Profile
-  (age, weight, height, activity, dietary goal)
-           │
-           ▼
-  📋 System calculates:
-  BMR → TDEE → Target Calories → Macro Split
-           │
-           ▼
-  🤖 Google Gemini 1.5 Flash
-  Receives structured JSON prompt:
-  {goal, calories, protein, carbs, fat, preferences}
-           │
-           ├──── ✅ API Success → Parse & Validate JSON Response
-           │
-           └──── ⚠️ API Failure → Deterministic Fallback Meal Plan
-                   (Zero downtime — app never breaks)
-           │
-           ▼
-  📦 Meal Plan Stored in PostgreSQL
-  (7 days × 3 meals × full nutrition data)
-           │
-           ▼
-  📊 User Dashboard Updates:
-  Macro Charts, Grocery List, PDF Export
+  👤 1. User submits Health Profile & Dietary Preferences
+        (Age, Weight, Height, Activity Level, Dietary Goal)
+                         │
+                         ▼
+  📐 2. Biometric Analytics Engine calculates:
+        BMR (Mifflin-St Jeor) ➔ TDEE ➔ Target Caloric Intake ➔ Macro Split
+                         │
+                         ▼
+  🤖 3. Google Gemini 1.5 Flash Prompt Execution
+        Structured JSON Prompt passed to Gemini API
+                         │
+        ┌────────────────┴────────────────┐
+        ▼                                 ▼
+  ✅ Gemini API Success          ⚠️ API Rate Limit / Failure
+  Parse & Validate JSON          Trigger Deterministic Fallback Engine
+        │                                 │
+        └────────────────┬────────────────┘
+                         │
+                         ▼
+  🗄️ 4. Store 7-Day Structured Meal Plan in PostgreSQL
+                         │
+                         ▼
+  📊 5. Render on React Dashboard:
+        Macro Charts, Weekly Meal Grid & Exportable Grocery List
 ```
 
 ---
@@ -449,222 +426,158 @@ GET    /api/admin/ai-logs/           → Admin: AI Request Audit
 ## 📊 15. Dashboard Features
 
 ### User Dashboard
-- **KPI Cards**: Calorie target, protein/carb/fat macros, water intake percentage, BMI status
-- **Macro Pie Chart**: Real-time donut chart showing protein/carb/fat distribution
-- **Weekly Progress Bar**: Daily calorie tracking against TDEE goals
-- **Water Tracker**: Animated progress bar with quick-add buttons (250ml, 500ml, 750ml)
-- **AI Recommendations**: Personalized tips from Gemini AI
+- **Interactive KPI Cards**: Real-time display of daily calories, target macros, BMI, and water intake.
+- **Macro Donut Chart**: Dynamic breakdown of Protein, Carbohydrates, and Fats via Recharts.
+- **Weekly Progress Tracking**: Bar chart showing historic daily intake versus target TDEE.
+- **Water Hydration Tracker**: Progress ring with 250ml, 500ml, and 750ml quick-add logs.
+- **AI Recommendations**: Personalized insights generated by Gemini AI.
 
 ### Admin Dashboard
-- **Platform KPIs**: Total users, active meal plans, AI requests count, system health
-- **User Registration Velocity**: Bar chart of daily sign-ups
-- **AI Audit Log**: Full prompt history, IP addresses, token estimates, success/fail status
-- **System Monitoring**: CPU, memory, database, and Gemini API health in real-time
+- **Platform Analytics**: Total active users, meal plans generated, AI API request counts.
+- **AI Audit Trail**: Log of all Gemini API calls, latency, token usage, and status.
+- **User Management**: Role assignment, profile inspection, and account moderation.
+- **Health Telemetry**: Live CPU, Memory, Database latency, and API error monitoring.
 
 ---
 
 ## 🔐 16. Security
 
-| Security Layer | Implementation |
-|---|---|
-| **JWT Authentication** | SimpleJWT with access + refresh token rotation |
-| **Password Hashing** | Django PBKDF2 with SHA-256 (100,000 iterations) |
-| **Role-Based Access** | `IsAdminRole` custom permission class on all admin endpoints |
-| **Rate Limiting** | Differentiated throttling per user type and endpoint |
-| **Input Validation** | Zod (frontend) + DRF serializer validation (backend) |
-| **CORS Protection** | `django-cors-headers` with whitelisted origins |
-| **Audit Logging** | Complete request lifecycle logs in `ActivityLog` model |
-| **SQL Injection** | Django ORM parameterized queries — no raw SQL |
-
-### Rate Limits
-```
-Anonymous Users   → 100 requests/day
-Authenticated     → 1,000 requests/day
-Auth Endpoints    → 10 requests/minute
-AI Generation     → 30 requests/hour
-```
+- **JWT Authentication**: Secure Access and Refresh token rotation using `djangorestframework-simplejwt`.
+- **Password Hashing**: PBKDF2 with SHA-256 (Django default 100,000+ iterations).
+- **Role-Based Access Control (RBAC)**: Custom permission classes (`IsAdminRole`, `IsOwnerOrReadOnly`).
+- **Rate Limiting & Throttling**: API endpoint throttling to prevent DDoS and abuse:
+  - User Endpoints: `1000/day`
+  - Auth Endpoints: `10/min`
+  - AI Generation: `30/hour`
+- **Input Validation**: Strict schema validation using Zod (Frontend) and DRF Serializers (Backend).
+- **Security Headers & CORS**: Integrated `django-cors-headers` with whitelist validation.
+- **Audit Logging**: Comprehensive logging of user activity and system events in `ActivityLog`.
 
 ---
 
 ## ⚡ 17. Performance
 
-| Optimization | Details |
-|---|---|
-| **Database Indexes** | Indexed on `user`, `created_at`, `email`, `category` columns |
-| **Query Optimization** | `select_related()` / `prefetch_related()` on all list endpoints |
-| **Thread-Safe Exports** | `threading.Lock()` on CSV/JSON/Excel write operations |
-| **Zero-Downtime AI** | Deterministic fallback client if Gemini API is unavailable |
-| **Docker Deployment** | Gunicorn WSGI with multi-worker process configuration |
-| **Load Testing** | Locust 2.29 with 35,000+ seeded user records for benchmarking |
+- **Database Indexing**: Optimized indexes on foreign keys (`user_id`), timestamps (`created_at`), and lookup fields.
+- **Query Optimization**: Django ORM query optimization using `select_related()` and `prefetch_related()` to prevent N+1 query issues.
+- **Thread-Safe Data Exporters**: Implemented `threading.Lock()` for concurrent CSV, Excel, and JSON report downloads.
+- **Production WSGI Server**: Gunicorn multi-worker configuration.
+- **Caching Ready**: Pre-configured support for Redis response caching.
+- **Load Tested**: Benchmark validated up to 1,000 concurrent users using Locust.
 
 ---
 
 ## 🧪 18. Testing
 
-```powershell
-# Run all Django unit tests
-.\venv\Scripts\python.exe manage.py test
+Run automated backend test suites:
 
-# Run with verbosity
-.\venv\Scripts\python.exe manage.py test --verbosity=2
+```bash
+cd backend
 
-# Run Locust load test (Interactive Web UI)
-.\run_load_tests.ps1 -Scenario Smoke
+# Run Django Unit & Integration Tests
+python manage.py test
 
-# Run Locust load test (Headless, 20 min)
-.\run_load_tests.ps1 -Scenario Normal -Headless
+# Run Tests with Detailed Output
+python manage.py test --verbosity=2
+
+# Run Locust Performance Load Tests (Web UI)
+powershell -File ../run_load_tests.ps1 -Scenario Smoke
 ```
 
-### Test Coverage
-| Type | Count | Coverage |
-|---|---|---|
-| Unit Tests | 38 tests | Models, Serializers, Permissions |
-| API Tests | Included | All REST endpoints validated |
-| Load Tests | 6 Scenarios | Smoke, Normal, Spike, Stress, Soak, Endurance |
+### Test Suite Breakdown:
+- **Unit Tests**: Coverage for models, serializers, permissions, and metric calculation formulas.
+- **API Integration Tests**: Validation of auth flows, HTTP response codes, and payload structure.
+- **Load & Stress Tests**: Locust load testing scripts for Smoke, Normal, Spike, and Endurance scenarios.
 
 ---
 
 ## 🔄 19. CI/CD Pipeline
 
+The repository includes automated CI/CD workflows using **GitHub Actions** (`.github/workflows/ci.yml`):
+
 ```text
-  📝 Developer commits code
-           │
-           ▼
-  🐙 Git Push → GitHub Repository
-           │
-           ▼
-  ⚙️ GitHub Actions Triggered (.github/workflows/ci.yml)
-           │
-           ├──▶ 🐍 Setup Python 3.12 environment
-           │
-           ├──▶ 📦 pip install -r requirements.txt
-           │
-           ├──▶ 🗄️  python manage.py migrate
-           │
-           ├──▶ 🧪 python manage.py test (38 unit tests)
-           │
-           ├──▶ 🔥 Locust Smoke Load Test (60 seconds, 10 users)
-           │
-           └──▶ ✅ Build Complete — All checks passed
+  Push / PR to 'main' branch
+             │
+             ▼
+  ⚙️ GitHub Actions Workflow
+             │
+             ├── 🐍 Setup Python 3.12 & Node 20
+             ├── 📦 Install Backend & Frontend Dependencies
+             ├── 🗄️ Run Database Migrations
+             ├── 🧪 Execute Django Unit Test Suite (38+ Tests)
+             ├── ⚡ Run Headless Locust Smoke Test
+             └── 🚀 Automatic Deployment Trigger (Vercel / Docker)
 ```
 
 ---
 
 ## 📈 20. Performance Results
 
-| Scenario | Users | Duration | Avg Response | Throughput | Error Rate |
-|---|---|---|---|---|---|
-| **Smoke Test** | 10 | 60s | < 200ms | ~50 req/s | 0% |
-| **Normal Load** | 100 | 5 min | < 350ms | ~200 req/s | < 1% |
-| **Spike Test** | 500 | 10 min | < 800ms | ~400 req/s | < 3% |
-| **Stress Test** | 1,000 | 20 min | < 1.2s | ~600 req/s | < 5% |
+Tested with Locust load testing framework (Summary from [performance_dashboard.md](./performance_dashboard.md)):
 
-> 📊 Full benchmark details in [performance_dashboard.md](./performance_dashboard.md)
+| Test Scenario | Concurrent Users | Test Duration | Avg Response Time | Peak Throughput | Error Rate |
+|---|---|---|---|---|---|
+| **Smoke Test** | 10 Users | 60 seconds | `180 ms` | `52 req/sec` | `0.00%` |
+| **Normal Load** | 100 Users | 5 minutes | `320 ms` | `210 req/sec` | `0.00%` |
+| **Spike Test** | 500 Users | 10 minutes | `740 ms` | `415 req/sec` | `0.45%` |
+| **Stress Test** | 1,000 Users | 20 minutes | `1.15 sec` | `580 req/sec` | `1.20%` |
 
 ---
 
 ## 🛣️ 21. Roadmap
 
-- [ ] 📱 **Native Mobile App** — React Native iOS & Android
-- [ ] 💬 **AI Chatbot** — Real-time Gemini nutrition assistant
-- [ ] ⌚ **Wearable Integration** — Fitbit, Apple Watch, Google Fit sync
-- [ ] 🌍 **Multi-Language Support** — i18n / l10n for global users
-- [ ] 🔔 **Push Notifications** — Meal reminders & hydration alerts
-- [ ] 💳 **Stripe Payments** — Pro & Enterprise subscription billing
-- [ ] 📊 **Advanced Analytics** — ML-powered nutrition trend predictions
-- [ ] 🏥 **Healthcare API** — FHIR / HL7 EHR integration
+- [x] **Vercel Frontend Deployment**
+- [ ] 📱 **Native Mobile App** (React Native for iOS & Android)
+- [ ] 💬 **Interactive AI Nutrition Chatbot** (Real-time Gemini assistance)
+- [ ] ⌚ **Wearable Device Integration** (Apple Health, Fitbit, Google Fit)
+- [ ] 🌐 **Multi-Language Support** (i18n Internationalization)
+- [ ] 💳 **Stripe Billing Integration** (SaaS Tier Subscriptions)
+- [ ] 🔔 **Push Notifications** (Water & Meal Time Alerts)
 
 ---
 
 ## 🤝 22. Contributing
 
-We welcome contributions from the community!
+Contributions are welcome! Please follow these steps:
 
-```bash
-# 1. Fork the repository on GitHub
-# 2. Clone your fork
-git clone https://github.com/YOUR_USERNAME/AI-DIET-BALANCE.git
-
-# 3. Create a feature branch
-git checkout -b feature/your-feature-name
-
-# 4. Make your changes and commit
-git commit -m "feat: add your feature description"
-
-# 5. Push to your fork
-git push origin feature/your-feature-name
-
-# 6. Open a Pull Request on GitHub
-```
-
-### Contribution Guidelines
-- Follow existing code style and conventions
-- Write meaningful commit messages (`feat:`, `fix:`, `docs:`, `refactor:`)
-- Add unit tests for new features
-- Update documentation if needed
+1. **Fork** the repository.
+2. **Create** a new feature branch (`git checkout -b feature/AmazingFeature`).
+3. **Commit** your changes (`git commit -m 'feat: Add some AmazingFeature'`).
+4. **Push** to the branch (`git push origin feature/AmazingFeature`).
+5. **Open** a Pull Request.
 
 ---
 
 ## 📄 23. License
 
+Distributed under the **MIT License**. See `LICENSE` for details.
+
 ```
 MIT License
 
-Copyright (c) 2025 AI Diet Balance Team
+Copyright (c) 2025 AI Diet Balance
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software.
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+...
 ```
 
 ---
 
 ## 👨‍💻 24. Authors
 
-<table>
-<tr>
-<td align="center">
-<strong>Nithya Serala</strong><br/>
-Lead Developer & AI Engineer<br/>
-<a href="https://github.com/Nithyanaidu23">GitHub</a> •
-<a href="mailto:nithyaserala545@gmail.com">Email</a>
-</td>
-<td align="center">
-<strong>Ganesh Polaiah Mallam</strong><br/>
-Full-Stack Developer & DevOps<br/>
-<a href="mailto:polaiahmallam8@gmail.com">Email</a>
-</td>
-</tr>
-</table>
-
----
-
-## ⚡ Quick Copy-Paste Commands
-
-```powershell
-# Push all updates to GitHub
-cd c:\Users\polai\OneDrive\Desktop\aiwebsite; git add .; git commit -m "feat: update"; git push origin main --force
-
-# Start Backend
-cd backend; .\venv\Scripts\python.exe manage.py runserver
-
-# Start Frontend
-cd frontend; npm run dev -- --host 0.0.0.0
-
-# Docker Full Stack
-docker-compose up --build
-```
+- **Nithya Serala** - *Lead AI & Software Engineer* - [Nithyanaidu23](https://github.com/Nithyanaidu23) - [nithyaserala545@gmail.com](mailto:nithyaserala545@gmail.com)
+- **Ganesh Polaiah Mallam** - *Full-Stack & DevOps Engineer* - [MALLAMPOLAIAHGANESH](https://github.com/MALLAMPOLAIAHGANESH) - [polaiahmallam8@gmail.com](mailto:polaiahmallam8@gmail.com)
 
 ---
 
 <div align="center">
 
-**⭐ If you find this project useful, please give it a star on GitHub! ⭐**
+**⭐ If you find this project helpful, please star the repository on GitHub! ⭐**
 
 [![GitHub Stars](https://img.shields.io/github/stars/Nithyanaidu23/AI-DIET-BALANCE?style=social)](https://github.com/Nithyanaidu23/AI-DIET-BALANCE)
-
-*Built with ❤️ using React 18, Django 5, and Google Gemini AI*
 
 </div>
