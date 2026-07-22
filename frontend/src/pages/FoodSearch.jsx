@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { nutritionService } from '../services'
 import LoadingSpinner from '../components/LoadingSpinner'
-import { Search, Filter } from 'lucide-react'
+import { Search } from 'lucide-react'
 
 const CATEGORIES = [
   { value: '',          label: 'All Categories'  },
@@ -92,20 +92,20 @@ export default function FoodSearch() {
   const foods = data?.results || data || []
 
   return (
-    <div className="page-container">
+    <div className="page-container space-y-6">
       <div className="page-header">
         <h1 className="page-title">Food Database</h1>
         <p className="page-subtitle">Browse {data?.count || '60+'} foods with verified nutritional data</p>
       </div>
 
       {/* Search & filters */}
-      <div className="card mb-6 flex flex-wrap gap-4">
-        <div className="flex-1 min-w-48 relative">
+      <div className="card flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
+        <div className="flex-1 relative">
           <Search size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500" />
           <input
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="input pl-10 py-2 text-sm"
+            className="input pl-10 py-2.5 text-sm"
             placeholder="Search foods…"
             id="food-search"
           />
@@ -114,13 +114,13 @@ export default function FoodSearch() {
         <select
           value={category}
           onChange={(e) => setCategory(e.target.value)}
-          className="select text-sm py-2 w-48"
+          className="select text-sm py-2.5 w-full sm:w-48"
           id="category-filter"
         >
           {CATEGORIES.map((c) => <option key={c.value} value={c.value}>{c.label}</option>)}
         </select>
 
-        <label className="flex items-center gap-2 text-sm text-slate-300 cursor-pointer select-none">
+        <label className="flex items-center gap-2 text-sm text-slate-300 cursor-pointer select-none py-1">
           <input
             type="checkbox"
             checked={vegOnly}
@@ -134,7 +134,7 @@ export default function FoodSearch() {
 
       {isLoading && <LoadingSpinner />}
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {foods.map((f) => <FoodCard key={f.id} food={f} />)}
       </div>
 

@@ -16,7 +16,7 @@ export default function AdminSettings() {
   return (
     <div className="space-y-6 max-w-4xl">
       <div>
-        <h1 className="text-2xl font-bold font-display text-white">System Settings & Infrastructure</h1>
+        <h1 className="text-xl sm:text-2xl font-bold font-display text-white">System Settings & Infrastructure</h1>
         <p className="text-xs text-slate-400">Configure platform backups, Gemini AI parameters, and server settings</p>
       </div>
 
@@ -28,20 +28,20 @@ export default function AdminSettings() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
           <div className="bg-slate-900 p-3 rounded-lg border border-slate-800">
             <p className="text-slate-500">CPU Usage</p>
-            <p className="text-lg font-bold text-white mt-1">{sys?.cpu_usage_percent}%</p>
+            <p className="text-base sm:text-lg font-bold text-white mt-1">{sys?.cpu_usage_percent}%</p>
           </div>
           <div className="bg-slate-900 p-3 rounded-lg border border-slate-800">
             <p className="text-slate-500">Memory RAM</p>
-            <p className="text-lg font-bold text-purple-400 mt-1">{sys?.memory_percent}%</p>
-            <p className="text-[10px] text-slate-500">{sys?.memory_used_mb} MB used</p>
+            <p className="text-base sm:text-lg font-bold text-purple-400 mt-1">{sys?.memory_percent}%</p>
+            <p className="text-[10px] text-slate-500 truncate">{sys?.memory_used_mb} MB used</p>
           </div>
           <div className="bg-slate-900 p-3 rounded-lg border border-slate-800">
             <p className="text-slate-500">Database</p>
-            <p className="text-lg font-bold text-emerald-400 mt-1">{sys?.database}</p>
+            <p className="text-base sm:text-lg font-bold text-emerald-400 mt-1 truncate">{sys?.database}</p>
           </div>
           <div className="bg-slate-900 p-3 rounded-lg border border-slate-800">
             <p className="text-slate-500">Gemini AI API</p>
-            <p className="text-lg font-bold text-emerald-400 mt-1">{sys?.gemini_api}</p>
+            <p className="text-base sm:text-lg font-bold text-emerald-400 mt-1 truncate">{sys?.gemini_api}</p>
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@ export default function AdminSettings() {
               toast.error('Sync failed')
             }
           }}
-          className="btn-primary text-xs gap-2"
+          className="btn-primary text-xs gap-2 w-full sm:w-auto"
         >
           <RefreshCw size={13} /> Trigger Emergency System Backup Now
         </button>

@@ -3,7 +3,7 @@ import { useAuth } from '../context/AuthContext'
 import {
   LayoutDashboard, Calendar, History, Search,
   Activity, User, Settings, LogOut, Zap,
-  ShoppingCart, Droplets, Heart, Shield,
+  ShoppingCart, Droplets, Heart, Shield, X
 } from 'lucide-react'
 import clsx from 'clsx'
 
@@ -20,16 +20,17 @@ const USER_NAV = [
   { to: '/settings',  label: 'Settings',     icon: Settings },
 ]
 
-export default function Sidebar() {
+export default function Sidebar({ isOpen, onClose }) {
   const { user, logout } = useAuth()
   const navigate = useNavigate()
 
   const handleLogout = () => {
     logout()
+    onClose?.()
     navigate('/login')
   }
 
-  return (
+  const content = (
     <aside className="w-64 bg-surface-card border-r border-surface-border flex flex-col h-full shrink-0">
       {/* Logo */}
       <div className="p-5 border-b border-surface-border">
@@ -43,11 +44,17 @@ export default function Sidebar() {
               <p className="text-xs text-brand-400">Planner</p>
             </div>
           </div>
-          {user?.is_admin && (
-            <NavLink to="/admin/dashboard" title="Go to Admin Console" className="p-1.5 rounded-lg bg-purple-500/20 text-purple-300 hover:bg-purple-500/30">
-              <Shield size={14} />
-            </NavLink>
-          )}
+          <div className="flex items-center gap-1">
+            {user?.is_admin && (
+              <NavLink to="/admin/dashboard" title="Go to Admin Console" onClick={onClose} className="p-1.5 rounded-lg bg-purple-500/20 text-purple-300 hover:bg-purple-500/30">
+                <Shield size={14} />
+              </NavLink>
+            )}
+            {/* Close button on mobile */}
+            <button onClick={onClose} className="lg:hidden p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-white/10" aria-label="Close menu">
+              <X size={18} />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -58,6 +65,7 @@ export default function Sidebar() {
           <NavLink
             key={to}
             to={to}
+            onClick={onClose}
             className={({ isActive }) =>
               clsx('nav-item', isActive && 'active')
             }
@@ -85,5 +93,24 @@ export default function Sidebar() {
         </button>
       </div>
     </aside>
+  )
+
+  return (
+    <>
+      {/* Desktop fixed sidebar */}
+      <div className="hidden lg:flex h-full shrink-0">
+        {content}
+      </div>
+
+      {/* Mobile slide-out drawer overlay */}
+      {isOpen && (
+        <div className="fixed inset-0 z-50 lg:hidden flex">
+          <div className="fixed inset-0 bg-black/70 backdrop-blur-sm" onClick={onClose} />
+          <div className="relative z-10 flex h-full">
+            {content}
+          </div>
+        </div>
+      )}
+    </>
   )
 }

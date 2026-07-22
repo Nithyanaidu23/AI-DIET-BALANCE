@@ -169,5 +169,41 @@
     "description": "User logged in from 127.0.0.1 (Google Chrome on Windows 10/11)",
     "ip_address": "127.0.0.1",
     "timestamp": "2026-07-22T19:46:56.182375+00:00"
+  },
+  {
+    "id": 20,
+    "user_id": 6,
+    "user_email": "polaiahmallam8@gmail.com",
+    "action": "LOGIN",
+    "description": "User logged in from 2409:40f0:5044:5ab6:8cdd:ebff:fec0:35e6 (Google Chrome on Android)",
+    "ip_address": "2409:40f0:5044:5ab6:8cdd:ebff:fec0:35e6",
+    "timestamp": "2026-07-22T20:45:03.441830+00:00"
+  },
+  {
+    "id": 21,
+    "user_id": 7,
+    "user_email": "12334566@gmail.com",
+    "action": "USER_REGISTERED",
+    "description": "New user registered: 12334566@gmail.com",
+    "ip_address": "",
+    "timestamp": "2026-07-22T20:45:34.140912+00:00"
+  },
+  {
+    "id": 22,
+    "user_id": 7,
+    "user_email": "12334566@gmail.com",
+    "action": "LOGIN",
+    "description": "User logged in from 223.184.123.59 (Google Chrome on Linux)",
+    "ip_address": "223.184.123.59",
+    "timestamp": "2026-07-22T20:45:36.880846+00:00"
+  },
+  {
+    "id": 23,
+    "user_id": 7,
+    "user_email": "12334566@gmail.com",
+    "action": "MEAL_GENERATED",
+    "description": "Generated meal plan: Custom Balanced AI Diet Plan (2000 kcal)",
+    "ip_address": "223.184.123.59",
+    "timestamp": "2026-07-22T20:46:05.109516+00:00"
   }
 ]

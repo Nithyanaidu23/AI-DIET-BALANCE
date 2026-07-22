@@ -19,15 +19,17 @@ function KpiCard({ icon: Icon, label, value, unit, color = 'brand' }) {
 
   return (
     <div className={`kpi-card ${c.bg}`}>
-      <div className={`w-9 h-9 rounded-xl flex items-center justify-center ${c.icon}`}>
-        <Icon size={18} className={c.text} />
-      </div>
-      <div>
-        <p className="kpi-label">{label}</p>
-        <p className="kpi-value">
-          {value ?? '—'}
-          {unit && <span className="text-base font-normal text-slate-400 ml-1">{unit}</span>}
-        </p>
+      <div className="flex items-center gap-3">
+        <div className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 ${c.icon}`}>
+          <Icon size={18} className={c.text} />
+        </div>
+        <div className="min-w-0 flex-1">
+          <p className="kpi-label">{label}</p>
+          <p className="kpi-value">
+            {value ?? '—'}
+            {unit && <span className="text-sm font-normal text-slate-400 ml-1">{unit}</span>}
+          </p>
+        </div>
       </div>
     </div>
   )
@@ -88,9 +90,9 @@ export default function Dashboard() {
   const targetCal = plan?.target_calories || 2000
 
   return (
-    <div className="page-container">
+    <div className="page-container space-y-6">
       {/* Header */}
-      <div className="page-header flex items-center justify-between">
+      <div className="page-header flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h1 className="page-title">
             Good {new Date().getHours() < 12 ? 'morning' : new Date().getHours() < 18 ? 'afternoon' : 'evening'},
@@ -98,13 +100,13 @@ export default function Dashboard() {
           </h1>
           <p className="page-subtitle">Here&apos;s your nutrition overview for today</p>
         </div>
-        <Link to="/planner" className="btn-primary gap-2 hidden sm:flex">
+        <Link to="/planner" className="btn-primary gap-2 w-full sm:w-auto">
           <Calendar size={15} /> Generate Plan
         </Link>
       </div>
 
-      {/* KPI Row */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+      {/* KPI Row (Mobile 1 col, Tablet 2 col, Laptop/Desktop 4 col) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         <KpiCard icon={Flame}   label="Calories Today"  value={macros.calories}  unit="kcal"   color="brand" />
         <KpiCard icon={Droplets}label="Water Today"    value={water ? Math.round(water.amount_ml / 1000 * 10) / 10 : 0} unit="L" color="blue" />
         <KpiCard icon={Scale}   label="Current BMI"    value={bmi?.bmi || '—'}                               color="purple" />
@@ -112,7 +114,7 @@ export default function Dashboard() {
       </div>
 
       {/* Progress + Chart row */}
-      <div className="grid lg:grid-cols-3 gap-6 mb-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Macro progress */}
         <div className="card lg:col-span-1">
           <h2 className="text-sm font-semibold text-white mb-4">Today&apos;s Macros</h2>
@@ -125,10 +127,12 @@ export default function Dashboard() {
         </div>
 
         {/* Doughnut chart */}
-        <div className="card flex flex-col">
-          <h2 className="text-sm font-semibold text-white mb-2">Macro Breakdown</h2>
+        <div className="card flex flex-col justify-center items-center text-center">
+          <h2 className="text-sm font-semibold text-white mb-2 w-full text-left">Macro Breakdown</h2>
           {macros.protein + macros.carbs + macros.fat > 0 ? (
-            <NutritionChart protein={macros.protein} carbs={macros.carbs} fat={macros.fat} size={200} />
+            <div className="w-full flex items-center justify-center">
+              <NutritionChart protein={macros.protein} carbs={macros.carbs} fat={macros.fat} size={200} />
+            </div>
           ) : (
             <div className="flex-1 flex items-center justify-center text-slate-500 text-sm py-8">
               No meal data yet — generate a plan!
@@ -142,18 +146,20 @@ export default function Dashboard() {
             <TrendingUp size={14} className="text-brand-400" /> Weight Trend
           </h2>
           {trend.length > 1 ? (
-            <ResponsiveContainer width="100%" height={160}>
-              <LineChart data={trend}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
-                <XAxis dataKey="recorded_at__date" tick={{ fontSize: 10, fill: '#64748b' }} tickLine={false} />
-                <YAxis domain={['auto', 'auto']} tick={{ fontSize: 10, fill: '#64748b' }} tickLine={false} axisLine={false} />
-                <Tooltip
-                  contentStyle={{ background: '#1e293b', border: '1px solid #334155', borderRadius: 8, fontSize: 12 }}
-                  labelStyle={{ color: '#94a3b8' }}
-                />
-                <Line type="monotone" dataKey="weight_kg" stroke="#22c55e" strokeWidth={2} dot={false} />
-              </LineChart>
-            </ResponsiveContainer>
+            <div className="w-full h-44">
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart data={trend}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
+                  <XAxis dataKey="recorded_at__date" tick={{ fontSize: 10, fill: '#64748b' }} tickLine={false} />
+                  <YAxis domain={['auto', 'auto']} tick={{ fontSize: 10, fill: '#64748b' }} tickLine={false} axisLine={false} />
+                  <Tooltip
+                    contentStyle={{ background: '#1e293b', border: '1px solid #334155', borderRadius: 8, fontSize: 12 }}
+                    labelStyle={{ color: '#94a3b8' }}
+                  />
+                  <Line type="monotone" dataKey="weight_kg" stroke="#22c55e" strokeWidth={2} dot={false} />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
           ) : (
             <div className="text-center text-slate-500 text-xs py-8">
               Log your BMI to see trends
@@ -174,7 +180,7 @@ export default function Dashboard() {
         </div>
 
         {todayMeals.length > 0 ? (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
             {todayMeals.map((meal) => (
               <MealCard
                 key={meal.id}

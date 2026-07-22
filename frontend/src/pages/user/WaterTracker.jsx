@@ -1,7 +1,7 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import { healthService } from '../../services'
 import LoadingSpinner from '../../components/LoadingSpinner'
-import { Droplets, Plus, Minus, Trophy } from 'lucide-react'
+import { Droplets } from 'lucide-react'
 import toast from 'react-hot-toast'
 
 export default function WaterTracker() {
@@ -32,19 +32,19 @@ export default function WaterTracker() {
   }
 
   return (
-    <div className="page-container max-w-2xl">
+    <div className="page-container max-w-2xl space-y-6">
       <div className="page-header">
         <h1 className="page-title">Daily Water Tracker</h1>
         <p className="page-subtitle">Optimal hydration based on your body weight and activity level</p>
       </div>
 
-      <div className="card text-center space-y-6 p-8">
-        <div className="w-20 h-20 rounded-full bg-blue-500/10 border-2 border-blue-500/30 flex items-center justify-center mx-auto shadow-glow-teal">
-          <Droplets size={36} className="text-blue-400" />
+      <div className="card text-center space-y-6 p-6 sm:p-8">
+        <div className="w-16 sm:w-20 h-16 sm:h-20 rounded-full bg-blue-500/10 border-2 border-blue-500/30 flex items-center justify-center mx-auto shadow-glow-teal">
+          <Droplets size={32} className="text-blue-400" />
         </div>
 
         <div>
-          <p className="text-5xl font-bold font-display text-white">{current}<span className="text-base text-slate-400 font-normal"> / {target} ml</span></p>
+          <p className="text-4xl sm:text-5xl font-bold font-display text-white">{current}<span className="text-sm sm:text-base text-slate-400 font-normal"> / {target} ml</span></p>
           <p className="text-xs text-blue-400 font-medium mt-1">{pct}% of daily hydration target achieved</p>
         </div>
 
@@ -54,7 +54,7 @@ export default function WaterTracker() {
         </div>
 
         {/* Quick add buttons */}
-        <div className="grid grid-cols-4 gap-3 pt-4 border-t border-surface-border">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-surface-border">
           {[
             { label: '+250 ml', val: 250 },
             { label: '+500 ml', val: 500 },
@@ -64,7 +64,7 @@ export default function WaterTracker() {
             <button
               key={label}
               onClick={() => addAmount(val)}
-              className="btn-secondary py-3 text-xs flex flex-col items-center gap-1 font-semibold"
+              className="btn-secondary py-3 text-xs flex flex-col items-center justify-center gap-1 font-semibold min-h-[44px]"
               disabled={updateWater.isPending}
             >
               {label}

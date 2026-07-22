@@ -43,7 +43,7 @@ export default function Register() {
   }
 
   return (
-    <div className="min-h-screen bg-surface flex items-center justify-center p-6">
+    <div className="min-h-screen bg-surface flex items-center justify-center p-4 sm:p-6 lg:p-12 overflow-x-hidden">
       <div className="w-full max-w-lg">
         <div className="flex items-center gap-2 mb-8">
           <div className="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center shadow-glow-green">
@@ -52,12 +52,12 @@ export default function Register() {
           <span className="font-bold text-white font-display">AI Diet Planner</span>
         </div>
 
-        <div className="card animate-in">
-          <h1 className="text-2xl font-bold font-display text-white mb-1">Create your account</h1>
-          <p className="text-sm text-slate-400 mb-8">Start your personalised nutrition journey</p>
+        <div className="card p-6 sm:p-8 animate-in">
+          <h1 className="text-xl sm:text-2xl font-bold font-display text-white mb-1">Create your account</h1>
+          <p className="text-xs sm:text-sm text-slate-400 mb-6 sm:mb-8">Start your personalised nutrition journey</p>
 
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               <div>
                 <label className="input-label">First name</label>
                 <div className="relative">
@@ -101,22 +101,28 @@ export default function Register() {
 
             <div>
               <label className="input-label">Confirm password</label>
-              <div className="relative">
-                <Lock size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500" />
-                <input {...register('password2')} type="password" className="input pl-9" placeholder="Repeat password" id="password2" />
-              </div>
+              <input
+                {...register('password2')}
+                type={showPw ? 'text' : 'password'}
+                className="input"
+                placeholder="Repeat password"
+                id="password2"
+              />
               {errors.password2 && <p className="input-error">{errors.password2.message}</p>}
             </div>
 
-            <button type="submit" className="btn-primary w-full py-3 mt-2" disabled={isSubmitting}>
-              {isSubmitting ? 'Creating account…' : 'Create Account'}
+            <button type="submit" className="btn-primary w-full py-3" disabled={isSubmitting}>
+              {isSubmitting ? 'Creating account…' : 'Create account'}
             </button>
           </form>
 
           <div className="divider" />
-          <p className="text-center text-sm text-slate-400">
+
+          <p className="text-center text-xs sm:text-sm text-slate-400">
             Already have an account?{' '}
-            <Link to="/login" className="text-brand-400 hover:text-brand-300 font-medium">Sign in</Link>
+            <Link to="/login" className="text-brand-400 hover:text-brand-300 font-medium">
+              Sign in
+            </Link>
           </p>
         </div>
       </div>

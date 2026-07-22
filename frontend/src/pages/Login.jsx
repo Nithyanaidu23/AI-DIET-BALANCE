@@ -32,7 +32,7 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen bg-surface flex">
+    <div className="min-h-screen bg-surface flex overflow-x-hidden">
       {/* Left panel */}
       <div className="hidden lg:flex flex-1 bg-gradient-to-br from-surface via-brand-950/30 to-surface items-center justify-center p-12">
         <div className="max-w-sm">
@@ -52,7 +52,7 @@ export default function Login() {
       </div>
 
       {/* Right panel — form */}
-      <div className="flex-1 flex items-center justify-center p-6">
+      <div className="flex-1 flex items-center justify-center p-4 sm:p-6 lg:p-12">
         <div className="w-full max-w-md">
           {/* Mobile logo */}
           <div className="flex items-center gap-2 mb-8 lg:hidden">
@@ -62,11 +62,11 @@ export default function Login() {
             <span className="font-bold text-white font-display">AI Diet Planner</span>
           </div>
 
-          <div className="card animate-in">
-            <h1 className="text-2xl font-bold font-display text-white mb-1">Welcome back</h1>
-            <p className="text-sm text-slate-400 mb-8">Sign in to your account</p>
+          <div className="card p-6 sm:p-8 animate-in">
+            <h1 className="text-xl sm:text-2xl font-bold font-display text-white mb-1">Welcome back</h1>
+            <p className="text-xs sm:text-sm text-slate-400 mb-6 sm:mb-8">Sign in to your account</p>
 
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 sm:space-y-5">
               <div>
                 <label className="input-label">Email address</label>
                 <div className="relative">
@@ -113,7 +113,7 @@ export default function Login() {
 
             <div className="divider" />
 
-            <p className="text-center text-sm text-slate-400">
+            <p className="text-center text-xs sm:text-sm text-slate-400">
               Don&apos;t have an account?{' '}
               <Link to="/register" className="text-brand-400 hover:text-brand-300 font-medium">
                 Create one free

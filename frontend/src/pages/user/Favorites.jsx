@@ -1,8 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import { mealService } from '../../services'
 import LoadingSpinner from '../../components/LoadingSpinner'
-import MealCard from '../../components/MealCard'
-import { Heart, Calendar } from 'lucide-react'
+import { Heart } from 'lucide-react'
 
 export default function Favorites() {
   const { data, isLoading } = useQuery({
@@ -13,7 +12,7 @@ export default function Favorites() {
   const favorites = data?.results || data || []
 
   return (
-    <div className="page-container">
+    <div className="page-container space-y-6">
       <div className="page-header">
         <h1 className="page-title">Favorite Meal Plans</h1>
         <p className="page-subtitle">Your saved recipes and high-performance meal plans</p>
@@ -29,7 +28,7 @@ export default function Favorites() {
       )}
 
       {!isLoading && favorites.length > 0 && (
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {favorites.map((fav) => (
             <div key={fav.id} className="card space-y-2">
               <div className="flex items-center justify-between">

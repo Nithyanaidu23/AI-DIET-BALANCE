@@ -30,5 +30,21 @@
     "created_at": "2026-07-22T19:28:49.016682+00:00",
     "meals_count": 4,
     "grocery_items_count": 6
+  },
+  {
+    "id": 3,
+    "user_id": 7,
+    "user_email": "12334566@gmail.com",
+    "title": "Custom Balanced AI Diet Plan",
+    "start_date": "2026-07-23",
+    "end_date": "2026-07-29",
+    "target_calories": 2000,
+    "target_protein_g": 140,
+    "target_carbs_g": 210,
+    "target_fat_g": 60,
+    "ai_generated": true,
+    "created_at": "2026-07-22T20:46:04.929859+00:00",
+    "meals_count": 4,
+    "grocery_items_count": 6
   }
 ]

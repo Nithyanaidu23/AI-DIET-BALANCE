@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { mealService } from '../../services'
 import LoadingSpinner from '../../components/LoadingSpinner'
-import { ShoppingCart, Check, Download } from 'lucide-react'
+import { ShoppingCart, Check } from 'lucide-react'
 
 export default function Grocery() {
   const [checkedItems, setCheckedItems] = useState({})
@@ -35,7 +35,7 @@ export default function Grocery() {
   }, {})
 
   return (
-    <div className="page-container max-w-4xl">
+    <div className="page-container max-w-4xl space-y-6">
       <div className="page-header flex justify-between items-center flex-wrap gap-4">
         <div>
           <h1 className="page-title">Grocery Shopping List</h1>
@@ -48,14 +48,14 @@ export default function Grocery() {
       {!isLoading && items.length === 0 && (
         <div className="card text-center py-16 text-slate-500">
           <ShoppingCart size={40} className="mx-auto mb-3 opacity-30" />
-          <p>No active grocery list. Generate a meal plan to build your list automatically!</p>
+          <p className="text-sm">No active grocery list. Generate a meal plan to build your list automatically!</p>
         </div>
       )}
 
       {!isLoading && items.length > 0 && (
         <div className="space-y-6 animate-in">
           {Object.entries(categories).map(([cat, catItems]) => (
-            <div key={cat} className="card">
+            <div key={cat} className="card p-4 sm:p-6">
               <h2 className="text-xs font-semibold uppercase tracking-wider text-brand-400 mb-3">{cat}</h2>
               <div className="space-y-2">
                 {catItems.map((item) => {
@@ -64,17 +64,17 @@ export default function Grocery() {
                     <div
                       key={item.id}
                       onClick={() => toggleCheck(item.id)}
-                      className={`flex items-center justify-between p-3 rounded-xl border transition-all cursor-pointer ${
+                      className={`flex items-center justify-between p-3 rounded-xl border transition-all cursor-pointer min-h-[44px] ${
                         isChecked ? 'bg-surface/40 border-surface-border text-slate-500 line-through' : 'bg-surface border-surface-border/60 text-slate-200 hover:border-brand-500/50'
                       }`}
                     >
-                      <div className="flex items-center gap-3">
-                        <div className={`w-5 h-5 rounded-md border flex items-center justify-center transition-colors ${isChecked ? 'bg-brand-500 border-brand-500 text-white' : 'border-slate-600'}`}>
+                      <div className="flex items-center gap-3 min-w-0 flex-1">
+                        <div className={`w-5 h-5 rounded-md border flex items-center justify-center shrink-0 transition-colors ${isChecked ? 'bg-brand-500 border-brand-500 text-white' : 'border-slate-600'}`}>
                           {isChecked && <Check size={12} />}
                         </div>
-                        <span className="text-sm font-medium">{item.name}</span>
+                        <span className="text-sm font-medium truncate">{item.name}</span>
                       </div>
-                      <span className="text-xs text-slate-400 font-mono">{item.quantity} {item.unit}</span>
+                      <span className="text-xs text-slate-400 font-mono shrink-0 ml-2">{item.quantity} {item.unit}</span>
                     </div>
                   )
                 })}

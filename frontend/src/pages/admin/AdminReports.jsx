@@ -16,14 +16,14 @@ export default function AdminReports() {
     <div className="space-y-6">
       <div className="flex justify-between items-center flex-wrap gap-4">
         <div>
-          <h1 className="text-2xl font-bold font-display text-white">Data Export & Backup Center</h1>
+          <h1 className="text-xl sm:text-2xl font-bold font-display text-white">Data Export & Backup Center</h1>
           <p className="text-xs text-slate-400">Download system data in CSV, JSON, or bundled ZIP archives</p>
         </div>
 
-        <div className="flex gap-3">
+        <div className="flex flex-col sm:flex-row gap-2.5 w-full sm:w-auto">
           <button
             onClick={() => exportService.downloadZip()}
-            className="btn-primary text-xs gap-2"
+            className="btn-primary text-xs gap-2 w-full sm:w-auto justify-center"
           >
             <FileArchive size={14} /> Download ZIP Archive
           </button>
@@ -38,7 +38,7 @@ export default function AdminReports() {
                 toast.error('Sync failed')
               }
             }}
-            className="btn-secondary text-xs gap-1.5"
+            className="btn-secondary text-xs gap-1.5 w-full sm:w-auto justify-center"
           >
             <RefreshCw size={13} /> Re-sync All Files
           </button>
@@ -48,7 +48,7 @@ export default function AdminReports() {
       {isLoading && <LoadingSpinner />}
 
       {!isLoading && (
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {files.map((f) => (
             <div key={f.name} className="card hover-lift flex flex-col justify-between p-4">
               <div>

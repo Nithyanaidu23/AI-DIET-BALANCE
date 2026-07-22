@@ -42,7 +42,7 @@
 
   /* Buttons */
   .btn {
-    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-surface disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl font-semibold text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-surface disabled:opacity-50 disabled:cursor-not-allowed min-h-[44px];
   }
   .btn-primary {
     @apply btn bg-brand-500 text-white hover:bg-brand-600 hover:shadow-glow-green focus:ring-brand-500 active:scale-95;
@@ -57,16 +57,16 @@
     @apply btn text-slate-300 hover:text-white hover:bg-white/10 focus:ring-brand-500 active:scale-95;
   }
   .btn-icon {
-    @apply p-2 rounded-lg text-slate-400 hover:text-white hover:bg-white/10 transition-colors;
+    @apply p-2.5 rounded-lg text-slate-400 hover:text-white hover:bg-white/10 transition-colors min-h-[44px] min-w-[44px] inline-flex items-center justify-center;
   }
 
   /* Form inputs */
   .input {
     @apply w-full px-4 py-3 rounded-xl bg-surface border border-surface-border text-slate-100 placeholder-slate-500 transition-all duration-200
-           focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500;
+           focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500 min-h-[44px];
   }
   .input-label {
-    @apply block text-sm font-medium text-slate-300 mb-1.5;
+    @apply block text-xs sm:text-sm font-medium text-slate-300 mb-1.5;
   }
   .input-error {
     @apply text-xs text-red-400 mt-1;
@@ -93,10 +93,10 @@
 
   /* KPI Card */
   .kpi-card {
-    @apply card flex flex-col gap-2;
+    @apply card flex flex-col gap-2 p-4 sm:p-5 lg:p-6;
   }
-  .kpi-value { @apply text-3xl font-bold font-display text-white; }
-  .kpi-label { @apply text-xs font-medium text-slate-400 uppercase tracking-wider; }
+  .kpi-value { @apply text-2xl sm:text-3xl font-bold font-display text-white truncate; }
+  .kpi-label { @apply text-[10px] sm:text-xs font-medium text-slate-400 uppercase tracking-wider truncate; }
 
   /* Progress bar */
   .progress-track {
@@ -108,7 +108,7 @@
 
   /* Sidebar nav item */
   .nav-item {
-    @apply flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-slate-400 hover:text-white hover:bg-white/10 transition-all duration-200 cursor-pointer;
+    @apply flex items-center gap-3 px-3.5 py-3 sm:py-2.5 rounded-xl text-sm font-medium text-slate-400 hover:text-white hover:bg-white/10 transition-all duration-200 cursor-pointer min-h-[44px];
   }
   .nav-item.active {
     @apply text-white bg-brand-600/20 border border-brand-600/30 shadow-glow-green;
@@ -121,20 +121,25 @@
 
   /* Page layout */
   .page-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8;
+    @apply max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 w-full overflow-x-hidden;
   }
   .page-header {
-    @apply mb-8;
+    @apply mb-4 sm:mb-6 lg:mb-8;
   }
   .page-title {
-    @apply text-3xl font-bold font-display text-white mb-1;
+    @apply text-xl sm:text-2xl lg:text-3xl font-bold font-display text-white mb-1 tracking-tight;
   }
   .page-subtitle {
-    @apply text-slate-400 text-sm;
+    @apply text-slate-400 text-xs sm:text-sm;
+  }
+
+  /* Table Container */
+  .table-container {
+    @apply w-full overflow-x-auto rounded-2xl border border-surface-border bg-surface-card/60 backdrop-blur-md shadow-card;
   }
 
   /* Section divider */
-  .divider { @apply border-t border-surface-border my-6; }
+  .divider { @apply border-t border-surface-border my-4 sm:my-6; }
 
   /* Skeleton loading */
   .skeleton {

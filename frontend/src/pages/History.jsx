@@ -1,7 +1,7 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import { mealService } from '../services'
 import LoadingSpinner from '../components/LoadingSpinner'
-import { Calendar, Heart, HeartOff, Trash2, Download, ChevronRight } from 'lucide-react'
+import { Calendar, Heart, HeartOff, Trash2, Download } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { exportPlanToPDF } from '../utils/pdfExport'
 import toast from 'react-hot-toast'
@@ -19,15 +19,21 @@ function PlanRow({ plan }) {
   })
 
   return (
-    <div className="card hover-lift flex items-start gap-4">
-      <div className="w-10 h-10 rounded-xl bg-brand-600/20 flex items-center justify-center shrink-0">
-        <Calendar size={18} className="text-brand-400" />
+    <div className="card hover-lift flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 p-4 sm:p-5">
+      <div className="flex items-center gap-3 w-full sm:w-auto">
+        <div className="w-10 h-10 rounded-xl bg-brand-600/20 flex items-center justify-center shrink-0">
+          <Calendar size={18} className="text-brand-400" />
+        </div>
+        <div className="sm:hidden flex-1 min-w-0">
+          <h3 className="font-semibold text-white text-sm truncate">{plan.title}</h3>
+          <p className="text-xs text-slate-500">{plan.start_date} → {plan.end_date}</p>
+        </div>
       </div>
 
-      <div className="flex-1 min-w-0">
-        <div className="flex items-start justify-between gap-2 flex-wrap">
+      <div className="flex-1 min-w-0 w-full">
+        <div className="hidden sm:flex items-start justify-between gap-2 flex-wrap">
           <div>
-            <h3 className="font-semibold text-white text-sm">{plan.title}</h3>
+            <h3 className="font-semibold text-white text-sm truncate">{plan.title}</h3>
             <p className="text-xs text-slate-500 mt-0.5">{plan.start_date} → {plan.end_date}</p>
           </div>
           <div className="flex items-center gap-1.5">
@@ -36,7 +42,7 @@ function PlanRow({ plan }) {
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-3 mt-2 text-xs text-slate-400">
+        <div className="flex flex-wrap gap-2.5 mt-1 sm:mt-2 text-xs text-slate-400">
           <span>{plan.target_calories} kcal</span>
           <span>P {plan.target_protein_g}g</span>
           <span>C {plan.target_carbs_g}g</span>
@@ -44,14 +50,14 @@ function PlanRow({ plan }) {
         </div>
       </div>
 
-      <div className="flex items-center gap-1.5 shrink-0">
+      <div className="flex items-center gap-1.5 shrink-0 w-full sm:w-auto justify-end border-t sm:border-t-0 pt-2 sm:pt-0 border-surface-border">
         <button onClick={() => exportPlanToPDF(plan)} className="btn-icon" title="Download PDF">
-          <Download size={14} />
+          <Download size={15} />
         </button>
         <button onClick={() => fav.mutate()} className="btn-icon" title={plan.is_favorited ? 'Unsave' : 'Save'}>
           {plan.is_favorited
-            ? <HeartOff size={14} className="text-red-400" />
-            : <Heart size={14} />
+            ? <HeartOff size={15} className="text-red-400" />
+            : <Heart size={15} />
           }
         </button>
         <button
@@ -59,7 +65,7 @@ function PlanRow({ plan }) {
           className="btn-icon hover:text-red-400"
           title="Delete"
         >
-          <Trash2 size={14} />
+          <Trash2 size={15} />
         </button>
       </div>
     </div>
@@ -75,13 +81,13 @@ export default function History() {
   const plans = data?.results || data || []
 
   return (
-    <div className="page-container">
-      <div className="page-header flex items-center justify-between">
+    <div className="page-container space-y-6">
+      <div className="page-header flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h1 className="page-title">Meal History</h1>
           <p className="page-subtitle">{plans.length} meal plan{plans.length !== 1 ? 's' : ''} saved</p>
         </div>
-        <Link to="/planner" className="btn-primary text-sm">+ New Plan</Link>
+        <Link to="/planner" className="btn-primary text-sm w-full sm:w-auto">+ New Plan</Link>
       </div>
 
       {isLoading && <LoadingSpinner />}

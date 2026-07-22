@@ -40,20 +40,20 @@ export default function Profile() {
   if (isLoading) return <LoadingSpinner />
 
   return (
-    <div className="page-container">
+    <div className="page-container space-y-6">
       <div className="page-header">
         <h1 className="page-title">My Profile</h1>
         <p className="page-subtitle">Update your health info for more accurate AI meal plans</p>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Avatar card */}
         <div className="card text-center py-8 lg:col-span-1">
           <div className="w-20 h-20 rounded-full bg-brand-600/30 border-2 border-brand-600/40 flex items-center justify-center text-3xl font-bold text-brand-400 mx-auto mb-4">
             {user?.full_name?.[0]?.toUpperCase() || '?'}
           </div>
-          <h2 className="font-bold text-white">{user?.full_name || '—'}</h2>
-          <p className="text-xs text-slate-400 mt-0.5">{user?.email}</p>
+          <h2 className="font-bold text-white text-base sm:text-lg">{user?.full_name || '—'}</h2>
+          <p className="text-xs text-slate-400 mt-0.5 truncate">{user?.email}</p>
           {profile?.is_complete ? (
             <span className="badge badge-green mt-3 mx-auto">Profile Complete</span>
           ) : (
@@ -80,7 +80,7 @@ export default function Profile() {
         <form onSubmit={handleSubmit((d) => update.mutate(d))} className="card lg:col-span-2 space-y-5">
           <h2 className="font-semibold text-white text-sm">Physical & Lifestyle Details</h2>
 
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             <div>
               <label className="input-label text-xs">Gender</label>
               <select {...register('gender')} className="select text-sm py-2" id="profile-gender">
@@ -124,7 +124,7 @@ export default function Profile() {
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             {FIELDS.map(({ key, label, type, placeholder }) => (
               <div key={key}>
                 <label className="input-label text-xs" htmlFor={`profile-${key}`}>{label}</label>
@@ -140,7 +140,7 @@ export default function Profile() {
             ))}
           </div>
 
-          <button type="submit" className="btn-primary gap-2" disabled={isSubmitting}>
+          <button type="submit" className="btn-primary gap-2 w-full sm:w-auto" disabled={isSubmitting}>
             <Save size={14} /> {isSubmitting ? 'Saving…' : 'Save Profile'}
           </button>
         </form>

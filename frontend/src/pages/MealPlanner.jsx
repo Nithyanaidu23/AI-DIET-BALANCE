@@ -39,7 +39,7 @@ export default function MealPlanner() {
   const [showGrocery, setShowGrocery] = useState(false)
   const qc = useQueryClient()
 
-  const { register, handleSubmit, formState: { errors } } = useForm({
+  const { register, handleSubmit } = useForm({
     defaultValues: { goal: 'lose_fat', activity_level: 'moderate', food_preference: 'none', age: 25, weight_kg: 70, height_cm: 170, gender: 'male' },
   })
 
@@ -67,19 +67,19 @@ export default function MealPlanner() {
   const grocery = plan?.grocery_items || []
 
   return (
-    <div className="page-container">
+    <div className="page-container space-y-6">
       <div className="page-header">
         <h1 className="page-title">AI Meal Planner</h1>
         <p className="page-subtitle">Generate a personalised 7-day meal plan powered by Gemini AI</p>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Form */}
         <div className="lg:col-span-1">
           <form onSubmit={handleSubmit((d) => generate.mutate(d))} className="card space-y-4">
             <h2 className="font-semibold text-white text-sm">Your Details</h2>
 
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
                 <label className="input-label text-xs">Age</label>
                 <input {...register('age', { required: true, min: 10, max: 100 })} type="number" className="input py-2 text-sm" placeholder="25" />
@@ -124,7 +124,7 @@ export default function MealPlanner() {
               <label className="input-label text-xs">Allergies (comma-separated)</label>
               <input {...register('allergies')} className="input py-2 text-sm" placeholder="peanuts, shellfish" />
             </div>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
                 <label className="input-label text-xs">Country</label>
                 <input {...register('country')} className="input py-2 text-sm" placeholder="India" />
@@ -135,7 +135,7 @@ export default function MealPlanner() {
               </div>
             </div>
 
-            <button type="submit" className="btn-primary w-full py-2.5" disabled={generate.isPending}>
+            <button type="submit" className="btn-primary w-full py-3" disabled={generate.isPending}>
               {generate.isPending ? (
                 <span className="flex items-center gap-2"><span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />Generating…</span>
               ) : (
@@ -182,44 +182,44 @@ export default function MealPlanner() {
             <div className="space-y-4 animate-in">
               {/* Plan header */}
               <div className="card">
-                <div className="flex items-start justify-between gap-4 flex-wrap">
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
                   <div>
-                    <h2 className="font-bold text-white text-lg">{plan.title}</h2>
+                    <h2 className="font-bold text-white text-base sm:text-lg">{plan.title}</h2>
                     <p className="text-xs text-slate-400 mt-0.5">
                       {plan.start_date} → {plan.end_date} · {plan.target_calories} kcal/day
                     </p>
                   </div>
                   <div className="flex gap-2">
-                    <button onClick={() => favorite.mutate(plan.id)} className="btn-secondary text-xs py-1.5 px-3 gap-1.5">
+                    <button onClick={() => favorite.mutate(plan.id)} className="btn-secondary text-xs py-1.5 px-3 gap-1.5 flex-1 sm:flex-none">
                       <Heart size={13} className={plan.is_favorited ? 'fill-red-400 text-red-400' : ''} />
                       Save
                     </button>
-                    <button onClick={() => exportPlanToPDF(plan)} className="btn-secondary text-xs py-1.5 px-3 gap-1.5">
+                    <button onClick={() => exportPlanToPDF(plan)} className="btn-secondary text-xs py-1.5 px-3 gap-1.5 flex-1 sm:flex-none">
                       <Download size={13} /> PDF
                     </button>
                   </div>
                 </div>
 
-                <div className="mt-4">
+                <div className="mt-4 flex items-center justify-center">
                   <NutritionChart protein={plan.target_protein_g} carbs={plan.target_carbs_g} fat={plan.target_fat_g} size={160} />
                 </div>
               </div>
 
               {/* Day tabs */}
               <div className="card">
-                <div className="flex gap-1.5 flex-wrap mb-4">
+                <div className="flex gap-1.5 overflow-x-auto pb-2 mb-4 scrollbar-none">
                   {Array.from({ length: 7 }, (_, i) => i + 1).map((d) => (
                     <button
                       key={d}
                       onClick={() => setActiveDay(d)}
-                      className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${activeDay === d ? 'bg-brand-500 text-white' : 'bg-surface text-slate-400 hover:text-white'}`}
+                      className={`px-3.5 py-2 rounded-lg text-xs font-medium transition-colors shrink-0 ${activeDay === d ? 'bg-brand-500 text-white' : 'bg-surface text-slate-400 hover:text-white'}`}
                     >
                       Day {d}
                     </button>
                   ))}
                 </div>
 
-                <div className="grid sm:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {currentDay.map((meal) => (
                     <MealCard
                       key={meal.id}
@@ -242,11 +242,11 @@ export default function MealPlanner() {
                 </button>
 
                 {showGrocery && (
-                  <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-2 animate-in">
+                  <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 animate-in">
                     {grocery.map((item) => (
                       <div key={item.id} className="flex items-center gap-2 text-xs bg-surface rounded-lg px-3 py-2">
-                        <span className="text-slate-300 flex-1">{item.name}</span>
-                        <span className="text-slate-500">{item.quantity} {item.unit}</span>
+                        <span className="text-slate-300 flex-1 truncate">{item.name}</span>
+                        <span className="text-slate-500 shrink-0">{item.quantity} {item.unit}</span>
                       </div>
                     ))}
                   </div>
