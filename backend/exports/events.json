@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "id": 1,
+    "user_id": 2,
+    "user_email": "Nythanaidu1@gmail.com",
+    "event_name": "MEAL_GENERATED",
+    "timestamp": "2026-07-22T19:19:17.008625+00:00",
+    "metadata": "{\"latency_ms\": 15.0, \"model_name\": \"gemini-1.5-flash-fallback\", \"request_size_chars\": 9629, \"response_size_chars\": 800, \"estimated_input_tokens\": 150, \"estimated_output_tokens\": 200, \"estimated_cost_usd\": 5e-05}"
+  },
+  {
+    "id": 2,
+    "user_id": 4,
+    "user_email": "mallamganesh8@gmail.com",
+    "event_name": "MEAL_GENERATED",
+    "timestamp": "2026-07-22T19:28:49.447243+00:00",
+    "metadata": "{\"latency_ms\": 15.0, \"model_name\": \"gemini-1.5-flash-fallback\", \"request_size_chars\": 9623, \"response_size_chars\": 800, \"estimated_input_tokens\": 150, \"estimated_output_tokens\": 200, \"estimated_cost_usd\": 5e-05}"
+  }
+]

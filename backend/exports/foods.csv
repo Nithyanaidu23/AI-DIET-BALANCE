@@ -1,1 +1,49 @@
 id,name,name_local,category,calories,protein_g,carbs_g,fat_g,fiber_g,serving_size_g,serving_description,is_vegetarian,is_vegan,is_gluten_free
+1,White Rice,,grains,130.00,2.70,28.20,0.30,0.40,180.0,1 cup cooked,True,True,True
+2,Brown Rice,,grains,123.00,2.70,25.60,1.00,1.60,180.0,1 cup cooked,True,True,True
+3,Oats,,grains,389.00,16.90,66.30,6.90,10.60,80.0,1 cup dry,True,True,True
+4,Whole Wheat Bread,,grains,247.00,13.00,41.00,4.20,6.00,30.0,1 slice,False,False,False
+5,Quinoa,,grains,120.00,4.40,21.30,1.90,2.80,185.0,1 cup cooked,True,True,True
+6,Chapati / Roti,,grains,297.00,9.00,55.00,4.00,4.50,40.0,1 medium roti,True,True,False
+7,Chicken Breast,,protein,165.00,31.00,0.00,3.60,0.00,100.0,100g cooked,False,False,True
+8,Chicken Thigh,,protein,209.00,26.00,0.00,11.00,0.00,100.0,100g cooked,False,False,True
+9,Salmon,,protein,208.00,20.00,0.00,13.40,0.00,100.0,100g cooked,False,False,True
+10,Tuna (canned),,protein,116.00,25.50,0.00,0.80,0.00,85.0,1 can drained,False,False,True
+11,Tilapia,,protein,129.00,26.00,0.00,2.70,0.00,100.0,100g cooked,False,False,True
+12,Eggs,,dairy,155.00,13.00,1.10,11.00,0.00,50.0,1 large egg,True,False,True
+13,Egg Whites,,dairy,52.00,11.00,0.70,0.20,0.00,100.0,100g / ~3 egg whites,True,False,True
+14,Paneer,,dairy,265.00,18.30,1.20,20.80,0.00,100.0,100g,True,False,True
+15,Tofu (firm),,protein,76.00,8.10,1.90,4.20,0.30,100.0,100g,True,True,True
+16,Whole Milk,,dairy,61.00,3.20,4.80,3.30,0.00,240.0,1 cup,True,False,True
+17,Greek Yogurt,,dairy,59.00,10.00,3.60,0.40,0.00,170.0,1 container,True,False,True
+18,Cheddar Cheese,,dairy,402.00,25.00,1.30,33.00,0.00,28.0,1 oz slice,True,False,True
+19,Cottage Cheese,,dairy,98.00,11.10,3.40,4.30,0.00,113.0,½ cup,True,False,True
+20,Lentils (Masoor Dal),,legumes,116.00,9.00,20.00,0.40,7.90,198.0,1 cup cooked,True,True,True
+21,Chickpeas (Chana),,legumes,164.00,8.90,27.40,2.60,7.60,164.0,1 cup cooked,True,True,True
+22,Black Beans,,legumes,132.00,8.90,23.70,0.50,8.70,172.0,1 cup cooked,True,True,True
+23,Kidney Beans (Rajma),,legumes,127.00,8.70,22.80,0.50,7.40,177.0,1 cup cooked,True,True,True
+24,Moong Dal,,legumes,105.00,7.00,19.00,0.40,5.00,202.0,1 cup cooked,True,True,True
+25,Broccoli,,vegetables,34.00,2.80,6.60,0.40,2.60,91.0,1 cup chopped,True,True,True
+26,Spinach,,vegetables,23.00,2.90,3.60,0.40,2.20,30.0,1 cup raw,True,True,True
+27,Sweet Potato,,vegetables,86.00,1.60,20.10,0.10,3.00,130.0,1 medium,True,True,True
+28,Carrot,,vegetables,41.00,0.90,9.60,0.20,2.80,61.0,1 medium,True,True,True
+29,Tomato,,vegetables,18.00,0.90,3.90,0.20,1.20,123.0,1 medium,True,True,True
+30,Cucumber,,vegetables,15.00,0.70,3.60,0.10,0.50,119.0,1 cup sliced,True,True,True
+31,Cauliflower,,vegetables,25.00,1.90,5.00,0.30,2.00,107.0,1 cup,True,True,True
+32,Capsicum (Bell Pepper),,vegetables,31.00,1.00,6.00,0.30,2.10,119.0,1 medium,True,True,True
+33,Banana,,fruits,89.00,1.10,22.80,0.30,2.60,118.0,1 medium,True,True,True
+34,Apple,,fruits,52.00,0.30,13.80,0.20,2.40,182.0,1 medium,True,True,True
+35,Orange,,fruits,47.00,0.90,11.80,0.10,2.40,131.0,1 medium,True,True,True
+36,Mango,,fruits,60.00,0.80,15.00,0.40,1.60,165.0,1 cup sliced,True,True,True
+37,Blueberries,,fruits,57.00,0.70,14.50,0.30,2.40,148.0,1 cup,True,True,True
+38,Almonds,,nuts_seeds,579.00,21.20,21.60,49.90,12.50,28.0,1 oz (~23 almonds),True,True,True
+39,Walnuts,,nuts_seeds,654.00,15.20,13.70,65.20,6.70,28.0,1 oz (~14 halves),True,True,True
+40,Chia Seeds,,nuts_seeds,486.00,16.50,42.10,30.70,34.40,28.0,2 tablespoons,True,True,True
+41,Peanut Butter,,nuts_seeds,588.00,25.10,20.00,50.40,6.00,32.0,2 tablespoons,True,True,True
+42,Flax Seeds,,nuts_seeds,534.00,18.30,28.90,42.20,27.30,14.0,1 tablespoon,True,True,True
+43,Olive Oil,,fats_oils,884.00,0.00,0.00,100.00,0.00,14.0,1 tablespoon,True,True,True
+44,Coconut Oil,,fats_oils,862.00,0.00,0.00,100.00,0.00,14.0,1 tablespoon,True,True,True
+45,Avocado,,fats_oils,160.00,2.00,8.50,14.70,6.70,150.0,1 medium,True,True,True
+46,Whey Protein (scoop),,beverages,120.00,24.00,3.00,2.00,0.00,30.0,1 scoop,False,False,True
+47,Black Coffee,,beverages,2.00,0.30,0.00,0.00,0.00,240.0,1 cup,True,True,True
+48,Green Tea,,beverages,2.00,0.20,0.50,0.00,0.00,240.0,1 cup brewed,True,True,True

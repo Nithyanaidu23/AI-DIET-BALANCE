@@ -1,13 +1,73 @@
 [
   {
     "id": 1,
-    "first_name": "",
-    "last_name": "",
-    "email": "profile@example.com",
+    "first_name": "ganesh",
+    "last_name": "m",
+    "email": "ganeshm8@gmail.com",
     "role": "user",
     "is_active": true,
     "is_staff": false,
-    "date_joined": "2026-07-22T18:06:36.636991+00:00",
+    "date_joined": "2026-07-22T17:29:20.084153+00:00",
+    "last_login": "",
+    "google_id": ""
+  },
+  {
+    "id": 2,
+    "first_name": "Nytha",
+    "last_name": "Naidu",
+    "email": "Nythanaidu1@gmail.com",
+    "role": "user",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2026-07-22T19:15:44.173385+00:00",
+    "last_login": "2026-07-22T19:15:45.473492+00:00",
+    "google_id": ""
+  },
+  {
+    "id": 3,
+    "first_name": "Admin",
+    "last_name": "Developer",
+    "email": "123456@gmail.com",
+    "role": "admin",
+    "is_active": true,
+    "is_staff": true,
+    "date_joined": "2026-07-22T19:26:37.655546+00:00",
+    "last_login": "2026-07-22T19:45:38.192208+00:00",
+    "google_id": ""
+  },
+  {
+    "id": 4,
+    "first_name": "ganesh",
+    "last_name": "mallam",
+    "email": "mallamganesh8@gmail.com",
+    "role": "user",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2026-07-22T19:28:27.447945+00:00",
+    "last_login": "2026-07-22T19:28:28.700570+00:00",
+    "google_id": ""
+  },
+  {
+    "id": 5,
+    "first_name": "nithya",
+    "last_name": "",
+    "email": "nithyaserala545@gmail.com",
+    "role": "admin",
+    "is_active": true,
+    "is_staff": true,
+    "date_joined": "2026-07-22T19:44:08.106989+00:00",
+    "last_login": "2026-07-22T19:46:55.930889+00:00",
+    "google_id": ""
+  },
+  {
+    "id": 6,
+    "first_name": "Ganesh",
+    "last_name": "",
+    "email": "polaiahmallam8@gmail.com",
+    "role": "admin",
+    "is_active": true,
+    "is_staff": true,
+    "date_joined": "2026-07-22T19:44:08.985927+00:00",
     "last_login": "",
     "google_id": ""
   }

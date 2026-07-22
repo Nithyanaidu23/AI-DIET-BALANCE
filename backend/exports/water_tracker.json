@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "user_email": "ganeshm8@gmail.com",
+    "date": "2026-07-22",
+    "amount_ml": 0,
+    "target_ml": 2500,
+    "percent_complete": 0.0
+  },
+  {
+    "id": 2,
+    "user_id": 2,
+    "user_email": "Nythanaidu1@gmail.com",
+    "date": "2026-07-23",
+    "amount_ml": 0,
+    "target_ml": 2500,
+    "percent_complete": 0.0
+  },
+  {
+    "id": 3,
+    "user_id": 4,
+    "user_email": "mallamganesh8@gmail.com",
+    "date": "2026-07-23",
+    "amount_ml": 750,
+    "target_ml": 2500,
+    "percent_complete": 30.0
+  },
+  {
+    "id": 4,
+    "user_id": 5,
+    "user_email": "nithyaserala545@gmail.com",
+    "date": "2026-07-23",
+    "amount_ml": 0,
+    "target_ml": 2500,
+    "percent_complete": 0.0
+  }
+]

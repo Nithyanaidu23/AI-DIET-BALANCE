@@ -2,10 +2,172 @@
   {
     "id": 1,
     "user_id": 1,
-    "user_email": "profile@example.com",
+    "user_email": "ganeshm8@gmail.com",
     "action": "USER_REGISTERED",
-    "description": "New user registered: profile@example.com",
+    "description": "New user registered: ganeshm8@gmail.com",
     "ip_address": "",
-    "timestamp": "2026-07-22T18:06:37.296566+00:00"
+    "timestamp": "2026-07-22T17:29:21.301826+00:00"
+  },
+  {
+    "id": 2,
+    "user_id": 1,
+    "user_email": "ganeshm8@gmail.com",
+    "action": "BMI_CALCULATED",
+    "description": "BMI: 24.2 (Normal weight)",
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-07-22T17:29:54.777284+00:00"
+  },
+  {
+    "id": 3,
+    "user_id": 2,
+    "user_email": "Nythanaidu1@gmail.com",
+    "action": "USER_REGISTERED",
+    "description": "New user registered: Nythanaidu1@gmail.com",
+    "ip_address": "",
+    "timestamp": "2026-07-22T19:15:44.654827+00:00"
+  },
+  {
+    "id": 4,
+    "user_id": 2,
+    "user_email": "Nythanaidu1@gmail.com",
+    "action": "LOGIN",
+    "description": "User logged in from 127.0.0.1 (Google Chrome on Windows 10/11)",
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-07-22T19:15:45.641825+00:00"
+  },
+  {
+    "id": 5,
+    "user_id": 2,
+    "user_email": "Nythanaidu1@gmail.com",
+    "action": "MEAL_GENERATED",
+    "description": "Generated meal plan: Custom Balanced AI Diet Plan (2000 kcal)",
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-07-22T19:19:16.856924+00:00"
+  },
+  {
+    "id": 6,
+    "user_id": 3,
+    "user_email": "123456@gmail.com",
+    "action": "LOGIN",
+    "description": "User logged in from 127.0.0.1 (Google Chrome on Windows 10/11)",
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-07-22T19:26:54.712342+00:00"
+  },
+  {
+    "id": 7,
+    "user_id": 4,
+    "user_email": "mallamganesh8@gmail.com",
+    "action": "USER_REGISTERED",
+    "description": "New user registered: mallamganesh8@gmail.com",
+    "ip_address": "",
+    "timestamp": "2026-07-22T19:28:27.954444+00:00"
+  },
+  {
+    "id": 8,
+    "user_id": 4,
+    "user_email": "mallamganesh8@gmail.com",
+    "action": "LOGIN",
+    "description": "User logged in from 127.0.0.1 (Google Chrome on Windows 10/11)",
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-07-22T19:28:28.860153+00:00"
+  },
+  {
+    "id": 9,
+    "user_id": 4,
+    "user_email": "mallamganesh8@gmail.com",
+    "action": "MEAL_GENERATED",
+    "description": "Generated meal plan: Custom Balanced AI Diet Plan (2000 kcal)",
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-07-22T19:28:49.305902+00:00"
+  },
+  {
+    "id": 10,
+    "user_id": 4,
+    "user_email": "mallamganesh8@gmail.com",
+    "action": "WATER_UPDATED",
+    "description": "Water updated: 250ml",
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-07-22T19:29:33.642870+00:00"
+  },
+  {
+    "id": 11,
+    "user_id": 4,
+    "user_email": "mallamganesh8@gmail.com",
+    "action": "WATER_UPDATED",
+    "description": "Water updated: 750ml",
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-07-22T19:29:34.777691+00:00"
+  },
+  {
+    "id": 12,
+    "user_id": 4,
+    "user_email": "mallamganesh8@gmail.com",
+    "action": "BMI_CALCULATED",
+    "description": "BMI: 24.2 (Normal weight)",
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-07-22T19:29:43.688017+00:00"
+  },
+  {
+    "id": 13,
+    "user_id": 4,
+    "user_email": "mallamganesh8@gmail.com",
+    "action": "BMI_CALCULATED",
+    "description": "BMI: 38.1 (Obese)",
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-07-22T19:30:23.514590+00:00"
+  },
+  {
+    "id": 14,
+    "user_id": 5,
+    "user_email": "nithyaserala545@gmail.com",
+    "action": "USER_REGISTERED",
+    "description": "New user registered: nithyaserala545@gmail.com",
+    "ip_address": "",
+    "timestamp": "2026-07-22T19:44:08.109583+00:00"
+  },
+  {
+    "id": 15,
+    "user_id": 6,
+    "user_email": "polaiahmallam8@gmail.com",
+    "action": "USER_REGISTERED",
+    "description": "New user registered: polaiahmallam8@gmail.com",
+    "ip_address": "",
+    "timestamp": "2026-07-22T19:44:08.989009+00:00"
+  },
+  {
+    "id": 16,
+    "user_id": 3,
+    "user_email": "123456@gmail.com",
+    "action": "LOGIN",
+    "description": "User logged in from 127.0.0.1 (Google Chrome on Windows 10/11)",
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-07-22T19:45:38.558863+00:00"
+  },
+  {
+    "id": 17,
+    "user_id": 3,
+    "user_email": "123456@gmail.com",
+    "action": "LOGOUT",
+    "description": "User logged out",
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-07-22T19:46:22.477965+00:00"
+  },
+  {
+    "id": 18,
+    "user_id": 5,
+    "user_email": "nithyaserala545@gmail.com",
+    "action": "LOGIN",
+    "description": "User logged in from 127.0.0.1 (Google Chrome on Windows 10/11)",
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-07-22T19:46:33.496317+00:00"
+  },
+  {
+    "id": 19,
+    "user_id": 5,
+    "user_email": "nithyaserala545@gmail.com",
+    "action": "LOGIN",
+    "description": "User logged in from 127.0.0.1 (Google Chrome on Windows 10/11)",
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-07-22T19:46:56.182375+00:00"
   }
 ]

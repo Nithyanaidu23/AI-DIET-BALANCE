@@ -1,2 +1,20 @@
 id,user_id,user_email,action,description,ip_address,timestamp
-1,1,profile@example.com,USER_REGISTERED,New user registered: profile@example.com,,2026-07-22T18:06:37.296566+00:00
+1,1,ganeshm8@gmail.com,USER_REGISTERED,New user registered: ganeshm8@gmail.com,,2026-07-22T17:29:21.301826+00:00
+2,1,ganeshm8@gmail.com,BMI_CALCULATED,BMI: 24.2 (Normal weight),127.0.0.1,2026-07-22T17:29:54.777284+00:00
+3,2,Nythanaidu1@gmail.com,USER_REGISTERED,New user registered: Nythanaidu1@gmail.com,,2026-07-22T19:15:44.654827+00:00
+4,2,Nythanaidu1@gmail.com,LOGIN,User logged in from 127.0.0.1 (Google Chrome on Windows 10/11),127.0.0.1,2026-07-22T19:15:45.641825+00:00
+5,2,Nythanaidu1@gmail.com,MEAL_GENERATED,Generated meal plan: Custom Balanced AI Diet Plan (2000 kcal),127.0.0.1,2026-07-22T19:19:16.856924+00:00
+6,3,123456@gmail.com,LOGIN,User logged in from 127.0.0.1 (Google Chrome on Windows 10/11),127.0.0.1,2026-07-22T19:26:54.712342+00:00
+7,4,mallamganesh8@gmail.com,USER_REGISTERED,New user registered: mallamganesh8@gmail.com,,2026-07-22T19:28:27.954444+00:00
+8,4,mallamganesh8@gmail.com,LOGIN,User logged in from 127.0.0.1 (Google Chrome on Windows 10/11),127.0.0.1,2026-07-22T19:28:28.860153+00:00
+9,4,mallamganesh8@gmail.com,MEAL_GENERATED,Generated meal plan: Custom Balanced AI Diet Plan (2000 kcal),127.0.0.1,2026-07-22T19:28:49.305902+00:00
+10,4,mallamganesh8@gmail.com,WATER_UPDATED,Water updated: 250ml,127.0.0.1,2026-07-22T19:29:33.642870+00:00
+11,4,mallamganesh8@gmail.com,WATER_UPDATED,Water updated: 750ml,127.0.0.1,2026-07-22T19:29:34.777691+00:00
+12,4,mallamganesh8@gmail.com,BMI_CALCULATED,BMI: 24.2 (Normal weight),127.0.0.1,2026-07-22T19:29:43.688017+00:00
+13,4,mallamganesh8@gmail.com,BMI_CALCULATED,BMI: 38.1 (Obese),127.0.0.1,2026-07-22T19:30:23.514590+00:00
+14,5,nithyaserala545@gmail.com,USER_REGISTERED,New user registered: nithyaserala545@gmail.com,,2026-07-22T19:44:08.109583+00:00
+15,6,polaiahmallam8@gmail.com,USER_REGISTERED,New user registered: polaiahmallam8@gmail.com,,2026-07-22T19:44:08.989009+00:00
+16,3,123456@gmail.com,LOGIN,User logged in from 127.0.0.1 (Google Chrome on Windows 10/11),127.0.0.1,2026-07-22T19:45:38.558863+00:00
+17,3,123456@gmail.com,LOGOUT,User logged out,127.0.0.1,2026-07-22T19:46:22.477965+00:00
+18,5,nithyaserala545@gmail.com,LOGIN,User logged in from 127.0.0.1 (Google Chrome on Windows 10/11),127.0.0.1,2026-07-22T19:46:33.496317+00:00
+19,5,nithyaserala545@gmail.com,LOGIN,User logged in from 127.0.0.1 (Google Chrome on Windows 10/11),127.0.0.1,2026-07-22T19:46:56.182375+00:00
