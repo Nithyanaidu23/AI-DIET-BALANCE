@@ -1,0 +1,2 @@
+id,user_id,user_email,age,gender,height_cm,weight_kg,activity_level,fitness_goal,food_preference,allergies,medical_conditions,country,cuisine_preference,budget_per_day_usd,workout_time,updated_at
+1,1,profile@example.com,28,,175.0,72.5,moderate,lose_fat,none,,,,,,,2026-07-22T18:06:37.429511+00:00

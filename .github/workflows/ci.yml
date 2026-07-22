@@ -1,0 +1,60 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt
+
+      - name: Run Django Tests
+        run: |
+          cd backend
+          python manage.py test
+
+      - name: Run Database Migrations & Seed Load Test Data
+        run: |
+          DJANGO_SETTINGS_MODULE=config.settings.load_test python backend/manage.py migrate
+          DJANGO_SETTINGS_MODULE=config.settings.load_test python backend/manage.py seed_load_test_users --count 50
+
+      - name: Start Django API Server in Background
+        run: |
+          DJANGO_SETTINGS_MODULE=config.settings.load_test python backend/manage.py runserver 8001 &
+          sleep 5
+
+      - name: Run Headless Locust Smoke Test (1-Minute CI Run)
+        run: |
+          mkdir -p backend/reports
+          python -m locust -f backend/locustfile.py -H http://localhost:8001 --headless -u 5 -r 1 --run-time 1m --csv=backend/reports/loadtest_smoke
+
+      - name: Upload Load Test Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: load-test-reports
+          path: backend/reports/
+
+      - name: Test Docker Compose Build
+        run: |
+          docker compose build
+

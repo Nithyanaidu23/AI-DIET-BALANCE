@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "user_email": "profile@example.com",
+    "action": "USER_REGISTERED",
+    "description": "New user registered: profile@example.com",
+    "ip_address": "",
+    "timestamp": "2026-07-22T18:06:37.296566+00:00"
+  }
+]

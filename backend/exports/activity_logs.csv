@@ -1,0 +1,2 @@
+id,user_id,user_email,action,description,ip_address,timestamp
+1,1,profile@example.com,USER_REGISTERED,New user registered: profile@example.com,,2026-07-22T18:06:37.296566+00:00

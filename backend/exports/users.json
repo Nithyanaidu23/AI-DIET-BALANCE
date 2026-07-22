@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "profile@example.com",
+    "role": "user",
+    "is_active": true,
+    "is_staff": false,
+    "date_joined": "2026-07-22T18:06:36.636991+00:00",
+    "last_login": "",
+    "google_id": ""
+  }
+]
