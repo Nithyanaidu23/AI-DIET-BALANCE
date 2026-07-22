@@ -1,0 +1,16 @@
+{
+  "name": "ai-diet-balance-root",
+  "version": "1.0.0",
+  "description": "AI Diet Balance Full Stack Platform",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File ./start_app.ps1",
+    "start:bat": "start_app.bat",
+    "backend": "cd backend && .\\venv\\Scripts\\python.exe manage.py runserver 0.0.0.0:8000",
+    "backend:all": "cd backend && .\\venv\\Scripts\\python.exe run_backend_all.py",
+    "frontend": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:preview": "cd frontend && npm run preview",
+    "seed": "cd backend && .\\venv\\Scripts\\python.exe seed_db.py",
+    "migrate": "cd backend && .\\venv\\Scripts\\python.exe manage.py migrate"
+  }
+}

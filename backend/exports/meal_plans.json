@@ -46,5 +46,21 @@
     "created_at": "2026-07-22T20:46:04.929859+00:00",
     "meals_count": 4,
     "grocery_items_count": 6
+  },
+  {
+    "id": 4,
+    "user_id": 6,
+    "user_email": "polaiahmallam8@gmail.com",
+    "title": "Custom Balanced AI Diet Plan",
+    "start_date": "2026-07-23",
+    "end_date": "2026-07-29",
+    "target_calories": 2000,
+    "target_protein_g": 140,
+    "target_carbs_g": 210,
+    "target_fat_g": 60,
+    "ai_generated": true,
+    "created_at": "2026-07-22T23:06:48.093784+00:00",
+    "meals_count": 4,
+    "grocery_items_count": 6
   }
 ]

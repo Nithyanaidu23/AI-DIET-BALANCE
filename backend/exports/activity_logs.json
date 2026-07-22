@@ -205,5 +205,23 @@
     "description": "Generated meal plan: Custom Balanced AI Diet Plan (2000 kcal)",
     "ip_address": "223.184.123.59",
     "timestamp": "2026-07-22T20:46:05.109516+00:00"
+  },
+  {
+    "id": 24,
+    "user_id": 6,
+    "user_email": "polaiahmallam8@gmail.com",
+    "action": "LOGIN",
+    "description": "User logged in from 127.0.0.1 (Google Chrome on Windows 10/11)",
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-07-22T23:04:46.575032+00:00"
+  },
+  {
+    "id": 25,
+    "user_id": 6,
+    "user_email": "polaiahmallam8@gmail.com",
+    "action": "MEAL_GENERATED",
+    "description": "Generated meal plan: Custom Balanced AI Diet Plan (2000 kcal)",
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-07-22T23:06:48.331575+00:00"
   }
 ]

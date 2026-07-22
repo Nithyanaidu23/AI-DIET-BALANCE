@@ -30,7 +30,7 @@ export default function AdminDashboard() {
   const { data, isLoading } = useQuery({
     queryKey: ['admin-analytics'],
     queryFn: () => adminService.getAnalytics().then((r) => r.data),
-    refetchInterval: 30_000,
+    refetchInterval: 10_000,
   })
 
   if (isLoading) return <LoadingSpinner label="Loading Admin Analytics…" />

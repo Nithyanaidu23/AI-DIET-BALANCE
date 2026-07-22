@@ -49,8 +49,8 @@
   },
   {
     "id": 5,
-    "first_name": "nithya",
-    "last_name": "",
+    "first_name": "Nithya",
+    "last_name": "Serala",
     "email": "nithyaserala545@gmail.com",
     "role": "admin",
     "is_active": true,
@@ -62,13 +62,13 @@
   {
     "id": 6,
     "first_name": "Ganesh",
-    "last_name": "",
+    "last_name": "Mallam",
     "email": "polaiahmallam8@gmail.com",
     "role": "admin",
     "is_active": true,
     "is_staff": true,
     "date_joined": "2026-07-22T19:44:08.985927+00:00",
-    "last_login": "2026-07-22T20:45:03.260750+00:00",
+    "last_login": "2026-07-22T23:04:46.410377+00:00",
     "google_id": ""
   },
   {

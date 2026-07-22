@@ -22,3 +22,5 @@ id,user_id,user_email,action,description,ip_address,timestamp
 21,7,12334566@gmail.com,USER_REGISTERED,New user registered: 12334566@gmail.com,,2026-07-22T20:45:34.140912+00:00
 22,7,12334566@gmail.com,LOGIN,User logged in from 223.184.123.59 (Google Chrome on Linux),223.184.123.59,2026-07-22T20:45:36.880846+00:00
 23,7,12334566@gmail.com,MEAL_GENERATED,Generated meal plan: Custom Balanced AI Diet Plan (2000 kcal),223.184.123.59,2026-07-22T20:46:05.109516+00:00
+24,6,polaiahmallam8@gmail.com,LOGIN,User logged in from 127.0.0.1 (Google Chrome on Windows 10/11),127.0.0.1,2026-07-22T23:04:46.575032+00:00
+25,6,polaiahmallam8@gmail.com,MEAL_GENERATED,Generated meal plan: Custom Balanced AI Diet Plan (2000 kcal),127.0.0.1,2026-07-22T23:06:48.331575+00:00

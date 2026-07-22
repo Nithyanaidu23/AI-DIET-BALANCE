@@ -8,7 +8,11 @@ import './index.css'
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      staleTime: 1000 * 60 * 5, // 5 minutes
+      staleTime: 1000 * 5, // 5 seconds
+      refetchInterval: 10000, // Automatically refetch every 10 seconds in real-time
+      refetchOnWindowFocus: true, // Auto-update data when switching back to the window
+      refetchOnMount: true,
+      refetchOnReconnect: true,
       retry: 1,
     },
   },

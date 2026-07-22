@@ -3,6 +3,6 @@ id,first_name,last_name,email,role,is_active,is_staff,date_joined,last_login,goo
 2,Nytha,Naidu,Nythanaidu1@gmail.com,user,True,False,2026-07-22T19:15:44.173385+00:00,2026-07-22T19:15:45.473492+00:00,
 3,Admin,Developer,123456@gmail.com,admin,True,True,2026-07-22T19:26:37.655546+00:00,2026-07-22T19:45:38.192208+00:00,
 4,ganesh,mallam,mallamganesh8@gmail.com,user,True,False,2026-07-22T19:28:27.447945+00:00,2026-07-22T19:28:28.700570+00:00,
-5,nithya,,nithyaserala545@gmail.com,admin,True,True,2026-07-22T19:44:08.106989+00:00,2026-07-22T19:46:55.930889+00:00,
-6,Ganesh,,polaiahmallam8@gmail.com,admin,True,True,2026-07-22T19:44:08.985927+00:00,2026-07-22T20:45:03.260750+00:00,
+5,Nithya,Serala,nithyaserala545@gmail.com,admin,True,True,2026-07-22T19:44:08.106989+00:00,2026-07-22T19:46:55.930889+00:00,
+6,Ganesh,Mallam,polaiahmallam8@gmail.com,admin,True,True,2026-07-22T19:44:08.985927+00:00,2026-07-22T23:04:46.410377+00:00,
 7,Nithay,Jsjsj,12334566@gmail.com,user,True,False,2026-07-22T20:45:33.145590+00:00,2026-07-22T20:45:36.554155+00:00,

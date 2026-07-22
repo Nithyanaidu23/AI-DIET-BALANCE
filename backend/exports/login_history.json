@@ -118,5 +118,20 @@
     "session_id": "",
     "status": "success",
     "failed_login_count": 0
+  },
+  {
+    "id": 9,
+    "user_id": 6,
+    "user_name": "Ganesh Mallam",
+    "user_email": "polaiahmallam8@gmail.com",
+    "login_time": "2026-07-22T23:04:46.503375+00:00",
+    "logout_time": "",
+    "ip_address": "127.0.0.1",
+    "browser_name": "Google Chrome",
+    "os_name": "Windows 10/11",
+    "device_type": "Desktop",
+    "session_id": "i41h2ji6vqvxxpkb6s2n3yma2eutewi7",
+    "status": "success",
+    "failed_login_count": 0
   }
 ]

@@ -14,5 +14,21 @@
     "event_name": "MEAL_GENERATED",
     "timestamp": "2026-07-22T19:28:49.447243+00:00",
     "metadata": "{\"latency_ms\": 15.0, \"model_name\": \"gemini-1.5-flash-fallback\", \"request_size_chars\": 9623, \"response_size_chars\": 800, \"estimated_input_tokens\": 150, \"estimated_output_tokens\": 200, \"estimated_cost_usd\": 5e-05}"
+  },
+  {
+    "id": 3,
+    "user_id": 7,
+    "user_email": "12334566@gmail.com",
+    "event_name": "MEAL_GENERATED",
+    "timestamp": "2026-07-22T20:46:05.191261+00:00",
+    "metadata": "{\"latency_ms\": 15.0, \"model_name\": \"gemini-1.5-flash-fallback\", \"request_size_chars\": 9582, \"response_size_chars\": 800, \"estimated_input_tokens\": 150, \"estimated_output_tokens\": 200, \"estimated_cost_usd\": 5e-05}"
+  },
+  {
+    "id": 4,
+    "user_id": 6,
+    "user_email": "polaiahmallam8@gmail.com",
+    "event_name": "MEAL_GENERATED",
+    "timestamp": "2026-07-22T23:06:48.424477+00:00",
+    "metadata": "{\"latency_ms\": 15.0, \"model_name\": \"gemini-1.5-flash-fallback\", \"request_size_chars\": 9623, \"response_size_chars\": 800, \"estimated_input_tokens\": 150, \"estimated_output_tokens\": 200, \"estimated_cost_usd\": 5e-05}"
   }
 ]
